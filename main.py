@@ -16,7 +16,7 @@ def get_data(date):
 def get_data_covid(date):
     return datetime.datetime.strptime(date, '%m/%d/%Y')
 
-curva_mental = read_csv('Indicators_of_Anxiety_or_Depression_Based_on_Reported_Frequency_of_Symptoms_During_Last_7_Days(1).csv')
+curva_mental = read_csv('Indicators_of_Anxiety_or_Depression_Based_on_Reported_Frequency_of_Symptoms_During_Last_7_Days.csv')
 
 curva_mental_filtered = curva_mental[curva_mental['Group'] == 'By State']
 

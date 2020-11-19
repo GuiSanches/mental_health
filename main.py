@@ -3,6 +3,20 @@ import matplotlib.pyplot as plt
 import numpy as np
 import re, datetime
 import sys
+from scipy.stats import spearmanr
+from estados import estados_dict
+
+#recebe arrays x e y
+def spline(x_axis, y_axis):
+    from scipy.interpolate import interp1d
+    f2 = interp1d(x_axis, y_axis, kind='cubic')
+
+    from scipy.interpolate import make_interp_spline, BSpline
+    x_new = np.linspace(min(x_axis),max(x_axis)) #terceiro parametro é o numero de samples, aumentar caso necessário, default é 50 apenas
+    spl = make_interp_spline(x_axis, f2(x_axis), k=3) #BSpline object
+    y_new = spl(x_new)
+
+    return x_new, y_new
 
 def get_data(date):
     date_regex = re.compile('([A-Z]{3,4} \d{1,2})', flags=re.MULTILINE | re.IGNORECASE)
@@ -16,53 +30,194 @@ def get_data(date):
 def get_data_covid(date):
     return datetime.datetime.strptime(date, '%m/%d/%Y')
 
-curva_mental = read_csv('Indicators_of_Anxiety_or_Depression_Based_on_Reported_Frequency_of_Symptoms_During_Last_7_Days.csv')
+def get_data_covid_eua(date):
+    return datetime.datetime.strptime(date, '%Y-%m-%d')
 
-curva_mental_filtered = curva_mental[curva_mental['Group'] == 'By State']
+def get_datas_medias_mental(doenca, estados):
+    dataset = eval('curva_mental_' + doenca)
+    
+    curva_mental_estado = dataset[dataset['State'] == estados]
+    lista_curva_mental = list(curva_mental_estado['Value'])
+    lista_curva_mental_norm = [(float(i)-min(lista_curva_mental))/(max(lista_curva_mental)-min(lista_curva_mental)) for i in lista_curva_mental]
+    lista_time_period = list(curva_mental_estado['Time Period Label'])
+    lista_data_mental = [get_data(data) for data in lista_time_period]
+    lista_datas_medias_mental = [inicio + (fim - inicio)/2 for inicio, fim in lista_data_mental]
+    return lista_datas_medias_mental, lista_data_mental, lista_curva_mental_norm
 
-curva_mental_depressao = curva_mental_filtered[curva_mental_filtered['Indicator'] == 'Symptoms of Depressive Disorder']
-curva_mental_ansiedade = curva_mental_filtered[curva_mental_filtered['Indicator'] == 'Symptoms of Anxiety Disorder']
-curva_mental_ambos = curva_mental_filtered[curva_mental_filtered['Indicator'] == 'Symptoms of Anxiety Disorder or Depressive Disorder']
+def get_datas_medias_covid(sigla):
+    curva_covid_estado = curva_covid[curva_covid['state'] == sigla]
+    lista_curva_covid = list(curva_covid_estado['new_case'])
+    lista_curva_covid_norm = [float(i)/max(lista_curva_covid) for i in lista_curva_covid]
+    lista_submission_date = list(curva_covid_estado['submission_date'])
+    lista_data_covid = [get_data_covid(data) for data in lista_submission_date]
+    
+    # cortando todos os dados de covid anteriores e posteriores ao intervalo da curva de saúde mental
+    inicio = lista_data_covid.index(lista_data_mental[0][0])
+    fim = lista_data_covid.index(lista_data_mental[-1][1])
+    lista_curva_covid_norm_sliced = lista_curva_covid_norm[inicio:fim+1]
+    lista_data_covid_sliced = lista_data_covid[inicio:fim+1]
+    
+    # reduzindo a quantidade de ocorrências de covid
+    # calcula a média de cada período do dataset de saúde mental
+    lista_covid_final = []
+    lista_datas_covid_final = []
+    for periodo in lista_data_mental:
+        inicio, fim = periodo[0], periodo[1]
+        media = inicio + (fim - inicio)/2
+        index_inicial = lista_data_covid_sliced.index(inicio)
+        index_final = lista_data_covid_sliced.index(fim)
+        valor_medio = np.mean(lista_curva_covid_norm_sliced[index_inicial:index_final+1])
+        lista_covid_final.append(valor_medio)
+        lista_datas_covid_final.append(media)
+    return lista_datas_covid_final, lista_covid_final
 
-curva_covid = read_csv('rows.csv accessType=DOWNLOAD.csv')
+def computa_estados(sigla, estado, doenca):
+    curva_mental = read_csv('Indicators_of_Anxiety_or_Depression_Based_on_Reported_Frequency_of_Symptoms_During_Last_7_Days.csv')
 
-curva_mental_estado = eval('curva_mental_' + sys.argv[3])[eval('curva_mental_' + sys.argv[3])['State'] == sys.argv[1]]
-lista_curva_mental = list(curva_mental_estado['Value'])
-lista_curva_mental_norm = [(float(i)-min(lista_curva_mental))/(max(lista_curva_mental)-min(lista_curva_mental)) for i in lista_curva_mental]
-lista_time_period = list(curva_mental_estado['Time Period Label'])
-lista_data_mental = [get_data(data) for data in lista_time_period]
-lista_datas_medias_mental = [inicio + (fim - inicio)/2 for inicio, fim in lista_data_mental]
+    curva_mental_filtered = curva_mental[curva_mental['Group'] == 'By State']
 
-curva_covid_estado = curva_covid[curva_covid['state'] == sys.argv[2]]
-lista_curva_covid = list(curva_covid_estado['new_case'])
-lista_curva_covid_norm = [float(i)/max(lista_curva_covid) for i in lista_curva_covid]
-lista_submission_date = list(curva_covid_estado['submission_date'])
-lista_data_covid = [get_data_covid(data) for data in lista_submission_date]
+    curva_mental_depressao = curva_mental_filtered[curva_mental_filtered['Indicator'] == 'Symptoms of Depressive Disorder']
+    curva_mental_ansiedade = curva_mental_filtered[curva_mental_filtered['Indicator'] == 'Symptoms of Anxiety Disorder']
+    curva_mental_ambos = curva_mental_filtered[curva_mental_filtered['Indicator'] == 'Symptoms of Anxiety Disorder or Depressive Disorder']
 
-# cortando todos os dados de covid anteriores e posteriores ao intervalo da curva de saúde mental
-inicio = lista_data_covid.index(lista_data_mental[0][0])
-fim = lista_data_covid.index(lista_data_mental[-1][1])
-lista_curva_covid_norm_sliced = lista_curva_covid_norm[inicio:fim+1]
-lista_data_covid_sliced = lista_data_covid[inicio:fim+1]
+    curva_covid = read_csv('rows.csv accessType=DOWNLOAD.csv')
 
-# reduzindo a quantidade de ocorrências de covid
-# calcula a média de cada período do dataset de saúde mental
-lista_covid_final = []
-lista_datas_covid_final = []
-for periodo in lista_data_mental:
-    inicio, fim = periodo[0], periodo[1]
-    media = inicio + (fim - inicio)/2
-    index_inicial = lista_data_covid_sliced.index(inicio)
-    index_final = lista_data_covid_sliced.index(fim)
-    valor_medio = np.mean(lista_curva_covid_norm_sliced[index_inicial:index_final+1])
-    lista_covid_final.append(valor_medio)
-    lista_datas_covid_final.append(media)
+    curva_mental_estado = eval('curva_mental_' + doenca)[eval('curva_mental_' + doenca)['State'] == estado]
+    lista_curva_mental = list(curva_mental_estado['Value'])
+    lista_curva_mental_norm = [(float(i)-min(lista_curva_mental))/(max(lista_curva_mental)-min(lista_curva_mental)) for i in lista_curva_mental]
+    lista_time_period = list(curva_mental_estado['Time Period Label'])
+    lista_data_mental = [get_data(data) for data in lista_time_period]
+    lista_datas_medias_mental = [inicio + (fim - inicio)/2 for inicio, fim in lista_data_mental]
 
-#print(np.corrcoef(lista_curva_covid_norm, lista_curva_mental_norm))
+    curva_covid_estado = curva_covid[curva_covid['state'] == sigla]
+    lista_curva_covid = list(curva_covid_estado['new_case'])
+    lista_submission_date = list(curva_covid_estado['submission_date'])
+    lista_data_covid = [get_data_covid(data) for data in lista_submission_date]
 
-plt.plot(lista_datas_medias_mental, lista_curva_mental_norm, label=('Casos de ' + sys.argv[3]))
-plt.plot(lista_datas_covid_final, lista_covid_final, label='Casos covid')
-plt.xlabel('Data da observação')
-plt.ylabel('Quantidade normalizada de casos')
-plt.legend(loc='upper left')
-plt.show()
+    # cortando todos os dados de covid anteriores e posteriores ao intervalo da curva de saúde mental
+    inicio = lista_data_covid.index(lista_data_mental[0][0])
+    fim = lista_data_covid.index(lista_data_mental[-1][1])
+    lista_covid_sliced = lista_curva_covid[inicio:fim+1]
+    lista_data_covid_sliced = lista_data_covid[inicio:fim+1]
+
+    # reduzindo a quantidade de ocorrências de covid
+    # calcula a média de cada período do dataset de saúde mental
+    lista_covid_final = []
+    lista_datas_covid_final = []
+    for periodo in lista_data_mental:
+        inicio, fim = periodo[0], periodo[1]
+        media = inicio + (fim - inicio)/2
+        index_inicial = lista_data_covid_sliced.index(inicio)
+        index_final = lista_data_covid_sliced.index(fim)
+        valor_medio = np.mean(lista_covid_sliced[index_inicial:index_final+1])
+        lista_covid_final.append(valor_medio)
+        lista_datas_covid_final.append(media)
+
+    lista_covid_final = [(float(i)-min(lista_covid_final))/(max(lista_covid_final)-min(lista_covid_final)) for i in lista_covid_final]
+
+    pearson = np.corrcoef(lista_covid_final, lista_curva_mental_norm)[0][1]
+    spearman = spearmanr(lista_covid_final, lista_curva_mental_norm)[0]
+
+    #print("Pearson:", pearson)
+    #print("Spearman:", spearman)
+
+    return pearson, spearman
+
+def computa_estados_argv():
+    global curva_mental_depressao, curva_mental_ansiedade, curva_covid, lista_datas_medias_mental, lista_data_mental, curva_mental_ambos
+    estado, sigla, doenca = sys.argv[1], sys.argv[2], sys.argv[3]
+    curva_mental = read_csv('Indicators_of_Anxiety_or_Depression_Based_on_Reported_Frequency_of_Symptoms_During_Last_7_Days.csv')
+
+    curva_mental_filtered = curva_mental[curva_mental['Group'] == 'By State']
+    
+    curva_mental_depressao = curva_mental_filtered[curva_mental_filtered['Indicator'] == 'Symptoms of Depressive Disorder']
+    curva_mental_ansiedade = curva_mental_filtered[curva_mental_filtered['Indicator'] == 'Symptoms of Anxiety Disorder']
+    curva_mental_ambos = curva_mental_filtered[curva_mental_filtered['Indicator'] == 'Symptoms of Anxiety Disorder or Depressive Disorder']
+
+    curva_covid = read_csv('rows.csv accessType=DOWNLOAD.csv')
+
+    lista_datas_medias_mental, lista_data_mental, lista_curva_mental_norm = get_datas_medias_mental(doenca, estado)
+
+    lista_datas_covid_final, lista_covid_final = get_datas_medias_covid(sigla)
+
+    lista_covid_final = [(float(i)-min(lista_covid_final))/(max(lista_covid_final)-min(lista_covid_final)) for i in lista_covid_final]
+
+    print(np.corrcoef(lista_covid_final, lista_curva_mental_norm))
+    print(spearmanr(lista_covid_final, lista_curva_mental_norm))
+
+    plt.plot(lista_datas_medias_mental, lista_curva_mental_norm, label=('Casos de ' + sys.argv[3]))
+    plt.plot(lista_datas_covid_final, lista_covid_final, label='Casos covid')
+    plt.xlabel('Data da observação')
+    plt.ylabel('Quantidade normalizada de casos')
+    plt.legend(loc='upper left')
+    plt.show()
+    
+def computa_EUA():
+    global curva_mental_ambos, curva_mental_depressao, curva_mental_ansiedade
+    curva_mental = read_csv('Indicators_of_Anxiety_or_Depression_Based_on_Reported_Frequency_of_Symptoms_During_Last_7_Days(1).csv')
+
+    curva_mental_filtered = curva_mental[curva_mental['Group'] == 'By State']
+
+    curva_mental_depressao = curva_mental_filtered[curva_mental_filtered['Indicator'] == 'Symptoms of Depressive Disorder']
+    curva_mental_ansiedade = curva_mental_filtered[curva_mental_filtered['Indicator'] == 'Symptoms of Anxiety Disorder']
+    
+    curva_mental_ambos = curva_mental_filtered[curva_mental_filtered['Indicator'] == 'Symptoms of Anxiety Disorder or Depressive Disorder']
+
+    curva_covid = read_csv('owid-covid-data.csv')
+
+    curva_mental_estado = eval('curva_mental_' + sys.argv[3])[eval('curva_mental_' + sys.argv[3])['State'] == sys.argv[1]]
+    lista_curva_mental = list(curva_mental_estado['Value'])
+    lista_curva_mental_norm = [(float(i)-min(lista_curva_mental))/(max(lista_curva_mental)-min(lista_curva_mental)) for i in lista_curva_mental]
+    lista_time_period = list(curva_mental_estado['Time Period Label'])
+    lista_data_mental = [get_data(data) for data in lista_time_period]
+    lista_datas_medias_mental = [inicio + (fim - inicio)/2 for inicio, fim in lista_data_mental]
+
+    curva_covid_eua = curva_covid[curva_covid['location'] == 'United States']
+    lista_curva_covid = list(curva_covid_eua['new_cases'])
+    lista_submission_date = list(curva_covid_eua['date'])
+    lista_data_covid = [get_data_covid_eua(data) for data in lista_submission_date]
+
+    # cortando todos os dados de covid anteriores e posteriores ao intervalo da curva de saúde mental
+    inicio = lista_data_covid.index(lista_data_mental[0][0])
+    fim = lista_data_covid.index(lista_data_mental[-1][1])
+    lista_covid_sliced = lista_curva_covid[inicio:fim+1]
+    lista_data_covid_sliced = lista_data_covid[inicio:fim+1]
+
+    # reduzindo a quantidade de ocorrências de covid
+    # calcula a média de cada período do dataset de saúde mental
+    lista_covid_final = []
+    lista_datas_covid_final = []
+    for periodo in lista_data_mental:
+        inicio, fim = periodo[0], periodo[1]
+        media = inicio + (fim - inicio)/2
+        index_inicial = lista_data_covid_sliced.index(inicio)
+        index_final = lista_data_covid_sliced.index(fim)
+        valor_medio = np.mean(lista_covid_sliced[index_inicial:index_final+1])
+        lista_covid_final.append(valor_medio)
+        lista_datas_covid_final.append(media)
+
+    lista_covid_final = [(float(i)-min(lista_covid_final))/(max(lista_covid_final)-min(lista_covid_final)) for i in lista_covid_final]
+
+    print(np.corrcoef(lista_covid_final, lista_curva_mental_norm))
+    print(spearmanr(lista_covid_final, lista_curva_mental_norm))
+
+    plt.plot(lista_datas_medias_mental, lista_curva_mental_norm, label=('Casos de ' + sys.argv[3]))
+    plt.plot(lista_datas_covid_final, lista_covid_final, label='Casos covid')
+    plt.xlabel('Data da observação')
+    plt.ylabel('Quantidade normalizada de casos')
+    plt.legend(loc='upper left')
+    plt.show()
+    
+computa_estados_argv()
+
+correlacoes = []
+for doenca in ['ansiedade', 'depressao', 'ambos']:
+    for sigla, estado in estados_dict:
+        pearson, spearman = computa_estados(sigla, estado, doenca)
+        correlacoes.append((estado, doenca, pearson, spearman))
+
+correlacoes_ordenadas = sorted(correlacoes, key=lambda item : item[3], reverse=True)
+for estado, doenca, pearson, spearman in correlacoes_ordenadas:
+    print(estado, doenca, pearson, spearman, end='\n\n')
+    
+    

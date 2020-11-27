@@ -13,6 +13,7 @@ atributo_ambos = 'Symptoms of Anxiety Disorder or Depressive Disorder'
 csv_covid = 'rows.csv accessType=DOWNLOAD.csv'
 csv_covid_EUA = 'owid-covid-data.csv'
 csv_mental = 'Indicators_of_Anxiety_or_Depression_Based_on_Reported_Frequency_of_Symptoms_During_Last_7_Days.csv'
+csv_google_trends = 'google-data.csv'
 
 estados = [
     ('AL', 'Alabama'),
@@ -184,33 +185,37 @@ def computa_curvas(sigla: str, estado: str, doenca: str, plot: bool, estadual: b
 
     return pearson, spearman
 
-def google_trends():
-    curva_mental = read_csv('multiTimeline_3.csv')
+def google_trends(termo_pesquisa: str):
+    curva_mental = read_csv(csv_google_trends)
     curva_mental.columns = ['Dia', 'Depressão', 'Ansiedade', 'Suicídio', 'Insônia', 'Saúde mental']
 
     curva_covid, datas_covid = le_curva_covid_EUA()
 
     lista_time_period = list(curva_mental['Dia'])
-    lista_data_mental = [get_data_covid_eua(data) for data in lista_time_period]
+    datas_mental = [get_data_covid_eua(data) for data in lista_time_period]
 
-    lista_covid_norm = [100*(float(i)-min(curva_covid))/(max(curva_covid)-min(curva_covid)) for i in curva_covid]
+    curva_mental = curva_mental[termo_pesquisa]
+    curva_covid = [i * 100 for i in normaliza_lista(curva_covid)]
 
-    for col in curva_mental.columns[1:]:
-        #print(col)
-        #print(np.corrcoef(lista_covid_norm, list(curva_mental[col])))
-        #print(spearmanr(lista_covid_norm, list(curva_mental[col])))
-        #print()
-        plt.plot(lista_data_mental, list(curva_mental[col]), label=('Pesquisas de ' + col))
+    #pearson = np.corrcoef(curva_covid, curva_mental)[0][1]
+    #spearman = spearmanr(curva_covid, curva_mental)[0]
 
-    plt.plot(datas_covid, lista_covid_norm, label='Casos covid')
+    #df = DataFrame(columns=['covid', 'mental'], data=zip(curva_covid, curva_mental))
+    #print(grangercausalitytests(df, 4), end="\n\n")
+
+    #print("Pearson:", pearson)
+    #print("Spearman:", spearman)
+
+    plt.plot(datas_mental, curva_mental, label=('Pesquisas de ' + termo_pesquisa))
+    plt.plot(datas_covid, curva_covid, label='Casos covid')
     plt.xlabel('Data da observação')
     plt.ylabel('Quantidade normalizada de casos')
     plt.legend(loc='upper left')
     plt.show()
 
-#google_trends()
+google_trends(argv[1])
 
-computa_curvas(argv[2], argv[1], argv[3], plot=True, estadual=True)
+#computa_curvas(argv[2], argv[1], argv[3], plot=True, estadual=True)
 
 #correlacoes = []
 #for doenca in ['ansiedade', 'depressao', 'ambos']:

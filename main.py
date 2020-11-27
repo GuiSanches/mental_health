@@ -12,7 +12,7 @@ atributo_ambos = 'Symptoms of Anxiety Disorder or Depressive Disorder'
 
 csv_covid = 'rows.csv accessType=DOWNLOAD.csv'
 csv_covid_EUA = 'owid-covid-data.csv'
-csv_mental = 'Indicators_of_Anxiety_or_Depression_Based_on_Reported_Frequency_of_Symptoms_During_Last_7_Days(1).csv'
+csv_mental = 'Indicators_of_Anxiety_or_Depression_Based_on_Reported_Frequency_of_Symptoms_During_Last_7_Days.csv'
 
 estados = [
     ('AL', 'Alabama'),
@@ -66,6 +66,9 @@ estados = [
     ('WI', 'Wisconsin'),
     ('WY', 'Wyoming')
 ]
+
+def calcula_media_periodo(inicio, fim):
+    return inicio + (fim - inicio)/2
 
 def get_data(date):
     date_regex = re.compile('([A-Z]{3,4} \d{1,2})', flags=re.MULTILINE | re.IGNORECASE)
@@ -122,10 +125,10 @@ def le_curva_mental(estado, doenca):
     lista_curva_mental = list(curva_mental_estado['Value'])
     lista_curva_mental_norm = normaliza_lista(lista_curva_mental)
     lista_time_period = list(curva_mental_estado['Time Period Label'])
-    lista_data_mental = [get_data(data) for data in lista_time_period]
-    lista_datas_medias_mental = [inicio + (fim - inicio)/2 for inicio, fim in lista_data_mental]
+    lista_datas_mental = [get_data(data) for data in lista_time_period]
+    #lista_datas_medias_mental = [inicio + (fim - inicio)/2 for inicio, fim in lista_data_mental]
 
-    return lista_curva_mental_norm, lista_datas_medias_mental
+    return lista_curva_mental_norm, lista_datas_mental
 
 # cortando todos os dados de covid anteriores e posteriores ao intervalo da curva de saúde mental
 def centraliza_curva_covid(datas_covid, datas_mental, curva_covid):
@@ -137,12 +140,12 @@ def centraliza_curva_covid(datas_covid, datas_mental, curva_covid):
 
 # reduzindo a quantidade de ocorrências de covid
 # calcula a média de cada período do dataset de saúde mental e substitui por esse valor
-def calcula_substitui_media_periodo(curva_covid, datas_covid, datas_mental):
+def substitui_media_periodo(curva_covid, datas_covid, datas_mental):
     lista_covid_final = []
     lista_datas_covid_final = []
     for periodo in datas_mental:
         inicio, fim = periodo[0], periodo[1]
-        media = inicio + (fim - inicio)/2
+        media = calcula_media_periodo(inicio, fim)
         index_inicial = datas_covid.index(inicio)
         index_final = datas_covid.index(fim)
         valor_medio = np.mean(curva_covid[index_inicial:index_final+1])
@@ -156,18 +159,20 @@ def computa_curvas(sigla: str, estado: str, doenca: str, plot: bool, estadual: b
 
     curva_covid, datas_covid = centraliza_curva_covid(datas_covid, datas_mental, curva_covid)
 
-    curva_covid, datas_covid = calcula_substitui_media_periodo(curva_covid, datas_covid, datas_mental)
+    curva_covid, datas_covid = substitui_media_periodo(curva_covid, datas_covid, datas_mental)
+
+    datas_mental = [calcula_media_periodo(inicio, fim) for inicio, fim in datas_mental]
 
     curva_covid = normaliza_lista(curva_covid)
 
     pearson = np.corrcoef(curva_covid, curva_mental)[0][1]
     spearman = spearmanr(curva_covid, curva_mental)[0]
 
-    print("Pearson:", pearson)
-    print("Spearman:", spearman)
-
     df = DataFrame(columns=['covid', 'mental'], data=zip(curva_covid, curva_mental))
     print(grangercausalitytests(df, 4), end="\n\n")
+
+    print("Pearson:", pearson)
+    print("Spearman:", spearman)
 
     if plot:
         plt.plot(datas_mental, curva_mental, label=('Casos de ' + doenca))

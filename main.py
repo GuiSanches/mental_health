@@ -11,7 +11,7 @@ atributo_ansiedade = 'Symptoms of Anxiety Disorder'
 atributo_ambos = 'Symptoms of Anxiety Disorder or Depressive Disorder'
 
 csv_covid = 'rows.csv accessType=DOWNLOAD.csv'
-csv_covid_EUA = 'owid-covid-data.csv'
+csv_covid_EUA = 'Dataset-OWID-covid.csv'
 csv_mental = 'Indicators_of_Anxiety_or_Depression_Based_on_Reported_Frequency_of_Symptoms_During_Last_7_Days.csv'
 csv_google_trends = 'google-data.csv'
 
@@ -132,11 +132,11 @@ def le_curva_mental(estado, doenca):
     return lista_curva_mental_norm, lista_datas_mental
 
 # cortando todos os dados de covid anteriores e posteriores ao intervalo da curva de saúde mental
-def centraliza_curva_covid(datas_covid, datas_mental, curva_covid):
-    inicio = datas_covid.index(datas_mental[0][0])
-    fim = datas_covid.index(datas_mental[-1][1])
-    lista_covid_sliced = curva_covid[inicio:fim+1]
-    datas_covid_sliced = datas_covid[inicio:fim+1]
+def centraliza_curva_covid(datas_covid, curva_covid, inicio, fim):
+    inicio_covid = datas_covid.index(inicio)
+    fim_covid = datas_covid.index(fim)
+    lista_covid_sliced = curva_covid[inicio_covid:fim_covid+1]
+    datas_covid_sliced = datas_covid[inicio_covid:fim_covid+1]
     return lista_covid_sliced, datas_covid_sliced
 
 # reduzindo a quantidade de ocorrências de covid
@@ -158,7 +158,7 @@ def computa_curvas(sigla: str, estado: str, doenca: str, plot: bool, estadual: b
     curva_covid, datas_covid = le_curva_covid(sigla) if estadual else le_curva_covid_EUA()
     curva_mental, datas_mental = le_curva_mental(estado, doenca)
 
-    curva_covid, datas_covid = centraliza_curva_covid(datas_covid, datas_mental, curva_covid)
+    curva_covid, datas_covid = centraliza_curva_covid(datas_covid, curva_covid, inicio=datas_mental[0][0], fim=datas_mental[-1][1])
 
     curva_covid, datas_covid = substitui_media_periodo(curva_covid, datas_covid, datas_mental)
 
@@ -169,7 +169,7 @@ def computa_curvas(sigla: str, estado: str, doenca: str, plot: bool, estadual: b
     pearson = np.corrcoef(curva_covid, curva_mental)[0][1]
     spearman = spearmanr(curva_covid, curva_mental)[0]
 
-    df = DataFrame(columns=['covid', 'mental'], data=zip(curva_covid, curva_mental))
+    df = DataFrame(columns=['mental', 'covid'], data=zip(curva_mental, curva_covid))
     print(grangercausalitytests(df, 4), end="\n\n")
 
     print("Pearson:", pearson)
@@ -197,14 +197,16 @@ def google_trends(termo_pesquisa: str):
     curva_mental = curva_mental[termo_pesquisa]
     curva_covid = [i * 100 for i in normaliza_lista(curva_covid)]
 
-    #pearson = np.corrcoef(curva_covid, curva_mental)[0][1]
-    #spearman = spearmanr(curva_covid, curva_mental)[0]
+    curva_covid, datas_covid = centraliza_curva_covid(datas_covid, curva_covid, inicio=datas_mental[0], fim=datas_mental[-1])
 
-    #df = DataFrame(columns=['covid', 'mental'], data=zip(curva_covid, curva_mental))
-    #print(grangercausalitytests(df, 4), end="\n\n")
+    pearson = np.corrcoef(curva_covid, curva_mental)[0][1]
+    spearman = spearmanr(curva_covid, curva_mental)[0]
 
-    #print("Pearson:", pearson)
-    #print("Spearman:", spearman)
+    df = DataFrame(columns=['mental', 'covid'], data=zip(curva_mental, curva_covid))
+    print(grangercausalitytests(df, 4), end="\n\n")
+
+    print("Pearson:", pearson)
+    print("Spearman:", spearman)
 
     plt.plot(datas_mental, curva_mental, label=('Pesquisas de ' + termo_pesquisa))
     plt.plot(datas_covid, curva_covid, label='Casos covid')

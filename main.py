@@ -164,7 +164,36 @@ def substitui_media_periodo(curva_covid, datas_covid, datas_mental):
         lista_datas_covid_final.append(media)
     return lista_covid_final, lista_datas_covid_final
 
-def computa_curvas(sigla: str, estado: str, doenca: str, plot: bool, estadual: bool):
+def calcula_spline(curva_covid, datas_covid, curva_mental, datas_mental, n_samples):
+    datas_covid, curva_covid = spline(datas_covid, curva_covid, n_samples)
+    datas_mental, curva_mental = spline(datas_mental, curva_mental, n_samples)
+    return curva_covid, datas_covid, curva_mental, datas_mental
+
+def plot(curva_covid, datas_covid, curva_mental, datas_mental, label_mental):
+    if datas_covid is None and datas_mental is None:
+        plt.plot(curva_mental, label=label_mental)
+        plt.plot(curva_covid, label='Casos covid')
+    else:
+        plt.plot(datas_mental, curva_mental, label=label_mental)
+        plt.plot(datas_covid, curva_covid, label='Casos covid')
+    plt.xlabel('Data da observação')
+    plt.ylabel('Quantidade normalizada de casos')
+    plt.legend(loc='upper left')
+    plt.show()
+
+def correlacao(curva_covid, curva_mental):
+    pearson = np.corrcoef(curva_covid, curva_mental)[0][1]
+    spearman = spearmanr(curva_covid, curva_mental)[0]
+    return pearson, spearman
+
+def granger_causuality(curva_covid, curva_mental, lag_max=4):
+    df = DataFrame(columns=['mental', 'covid'], data=zip(curva_mental, curva_covid))
+    return grangercausalitytests(df, lag_max)
+
+def diff_primeira_ordem(curva_covid, curva_mental):
+    return np.diff(curva_covid), np.diff(curva_mental)
+
+def computa_curvas(sigla: str, estado: str, doenca: str, estadual: bool):
     curva_covid, datas_covid = le_curva_covid(sigla) if estadual else le_curva_covid_EUA()
     curva_mental, datas_mental = le_curva_mental(estado, doenca)
 
@@ -176,27 +205,7 @@ def computa_curvas(sigla: str, estado: str, doenca: str, plot: bool, estadual: b
 
     curva_covid = normaliza_lista(curva_covid)
 
-    datas_covid, curva_covid = spline(datas_covid, curva_covid, 100)
-    datas_mental, curva_mental = spline(datas_mental, curva_mental, 100)
-
-    pearson = np.corrcoef(curva_covid, curva_mental)[0][1]
-    spearman = spearmanr(curva_covid, curva_mental)[0]
-
-    df = DataFrame(columns=['mental', 'covid'], data=zip(curva_mental, curva_covid))
-    print(grangercausalitytests(df, 4), end="\n\n")
-
-    print("Pearson:", pearson)
-    print("Spearman:", spearman)
-
-    if plot:
-        plt.plot(datas_mental, curva_mental, label=('Casos de ' + doenca))
-        plt.plot(datas_covid, curva_covid, label='Casos covid')
-        plt.xlabel('Data da observação')
-        plt.ylabel('Quantidade normalizada de casos')
-        plt.legend(loc='upper left')
-        plt.show()
-
-    return pearson, spearman
+    return curva_covid, datas_covid, curva_mental, datas_mental
 
 def google_trends(termo_pesquisa: str):
     curva_mental = read_csv(csv_google_trends)
@@ -212,25 +221,25 @@ def google_trends(termo_pesquisa: str):
 
     curva_covid, datas_covid = centraliza_curva_covid(datas_covid, curva_covid, inicio=datas_mental[0], fim=datas_mental[-1])
 
-    pearson = np.corrcoef(curva_covid, curva_mental)[0][1]
-    spearman = spearmanr(curva_covid, curva_mental)[0]
+    return curva_covid, datas_covid, curva_mental, datas_mental
 
-    df = DataFrame(columns=['mental', 'covid'], data=zip(curva_mental, curva_covid))
-    print(grangercausalitytests(df, 4), end="\n\n")
+def testes_google_trends():
+    curva_covid, datas_covid, curva_mental, datas_mental = google_trends(argv[1])
+    print(granger_causuality(curva_covid, curva_mental), end="\n\n")
+    plot(curva_covid, datas_covid, curva_mental, datas_mental, label_mental=('Pesquisas de ' + argv[1]))
+    curva_covid, curva_mental = diff_primeira_ordem(curva_covid, curva_mental)
+    print(granger_causuality(curva_covid, curva_mental), end="\n\n")
+    plot(curva_covid, None, curva_mental, None, label_mental=('Pesquisas de ' + argv[1]))
 
-    print("Pearson:", pearson)
-    print("Spearman:", spearman)
+def testes_cdc():
+    curva_covid, datas_covid, curva_mental, datas_mental = computa_curvas(argv[2], argv[1], argv[3], estadual=True)
+    print(granger_causuality(curva_covid, curva_mental), end="\n\n")
+    plot(curva_covid, datas_covid, curva_mental, datas_mental, label_mental=('Casos de ' + argv[3]))
+    curva_covid, curva_mental = diff_primeira_ordem(curva_covid, curva_mental)
+    print(granger_causuality(curva_covid, curva_mental), end="\n\n")
+    plot(curva_covid, None, curva_mental, None, label_mental=('Casos de ' + argv[3]))
 
-    plt.plot(datas_mental, curva_mental, label=('Pesquisas de ' + termo_pesquisa))
-    plt.plot(datas_covid, curva_covid, label='Casos covid')
-    plt.xlabel('Data da observação')
-    plt.ylabel('Quantidade normalizada de casos')
-    plt.legend(loc='upper left')
-    plt.show()
-
-google_trends(argv[1])
-
-#computa_curvas(argv[2], argv[1], argv[3], plot=True, estadual=True)
+testes_cdc()
 
 #correlacoes = []
 #for doenca in ['ansiedade', 'depressao', 'ambos']:

@@ -1,3 +1,4 @@
+from scipy.interpolate import interp1d
 from statsmodels.tsa.stattools import grangercausalitytests
 from pandas import read_csv, DataFrame
 import matplotlib.pyplot as plt
@@ -67,6 +68,15 @@ estados = [
     ('WI', 'Wisconsin'),
     ('WY', 'Wyoming')
 ]
+
+#recebe arrays x e y
+def spline(x_axis, y_axis, n_samples):
+    x_axis = [time.timestamp() for time in x_axis]
+    f2 = interp1d(x_axis, y_axis, kind='cubic')
+    xnew = np.linspace(x_axis[0], x_axis[-1], num=n_samples, endpoint=True)
+    ynew = f2(xnew)
+    xnew = [datetime.datetime.fromtimestamp(timestamp) for timestamp in xnew]
+    return xnew, ynew
 
 def calcula_media_periodo(inicio, fim):
     return inicio + (fim - inicio)/2
@@ -165,6 +175,9 @@ def computa_curvas(sigla: str, estado: str, doenca: str, plot: bool, estadual: b
     datas_mental = [calcula_media_periodo(inicio, fim) for inicio, fim in datas_mental]
 
     curva_covid = normaliza_lista(curva_covid)
+
+    datas_covid, curva_covid = spline(datas_covid, curva_covid, 100)
+    datas_mental, curva_mental = spline(datas_mental, curva_mental, 100)
 
     pearson = np.corrcoef(curva_covid, curva_mental)[0][1]
     spearman = spearmanr(curva_covid, curva_mental)[0]

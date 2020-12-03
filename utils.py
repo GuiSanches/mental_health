@@ -4,7 +4,7 @@ import re
 import matplotlib.pyplot as plt
 import numpy as np
 
-from pandas import DataFrame, read_csv
+from pandas import DataFrame, read_csv, concat
 from scipy.interpolate import interp1d
 from scipy.stats import spearmanr
 from statsmodels.tsa.stattools import grangercausalitytests
@@ -45,9 +45,11 @@ def get_data_covid(date):
 def get_data_covid_eua(date):
     return datetime.datetime.strptime(date, '%Y-%m-%d')
 
-def normaliza_lista(lista):
-    lista = [(float(i)-min(lista))/(max(lista)-min(lista)) for i in lista]
-    return lista
+def normaliza_dataframe(df: DataFrame):
+    media = df.mean()[0]
+    desvio = df.std()[0]
+    df = (df - media) / desvio
+    return df
 
 # carrega o dataset de covid de determinado estado americano
 def le_curva_covid(sigla):
@@ -55,22 +57,31 @@ def le_curva_covid(sigla):
 
     curva_covid_estado = curva_covid[curva_covid['state'] == sigla]
 
-    lista_curva_covid = list(curva_covid_estado['new_case'])
-    lista_submission_date = list(curva_covid_estado['submission_date'])
-    lista_data_covid = [get_data_covid(data) for data in lista_submission_date]
+    df_covid = curva_covid_estado[['submission_date', 'new_case']]
 
-    return lista_curva_covid, lista_data_covid
+    for index, data in enumerate(df_covid['submission_date']):
+        df_covid['submission_date'].iloc[index] = get_data_covid(data)
+
+    df_covid = df_covid.set_index('submission_date')
+
+    return df_covid
 
 # carrega o dataset de covid do país inteiro (EUA)
 def le_curva_covid_EUA():
     curva_covid = read_csv(csv_covid_EUA)
 
     curva_covid_eua = curva_covid[curva_covid['location'] == 'United States']
-    lista_curva_covid = list(curva_covid_eua['new_cases'])
-    lista_submission_date = list(curva_covid_eua['date'])
-    lista_data_covid = [get_data_covid_eua(data) for data in lista_submission_date]
 
-    return lista_curva_covid, lista_data_covid
+    df_covid = curva_covid_eua[['date', 'new_cases']]
+
+    for index, data in enumerate(df_covid['date']):
+        df_covid['date'].iloc[index] = get_data_covid_eua(data)
+
+    df_covid = df_covid.set_index('date')
+
+    df_covid = normaliza_dataframe(df_covid)
+
+    return df_covid
 
 def le_curva_mental(estado, doenca):
     curva_mental = read_csv(csv_mental)
@@ -82,29 +93,35 @@ def le_curva_mental(estado, doenca):
 
     curva_mental_estado = curva_mental_doenca[curva_mental_doenca['State'] == estado]
 
-    lista_curva_mental = list(curva_mental_estado['Value'])
-    lista_curva_mental_norm = normaliza_lista(lista_curva_mental)
-    lista_time_period = list(curva_mental_estado['Time Period Label'])
-    lista_datas_mental = [get_data(data) for data in lista_time_period]
-    #lista_datas_medias_mental = [inicio + (fim - inicio)/2 for inicio, fim in lista_data_mental]
+    df_mental = curva_mental_estado[['Time Period Label', 'Value']]
 
-    return lista_curva_mental_norm, lista_datas_mental
+    for index, data in enumerate(df_mental['Time Period Label']):
+        df_mental['Time Period Label'].iloc[index] = get_data(data)
+
+    df_mental = df_mental.set_index('Time Period Label')
+
+    df_mental = normaliza_dataframe(df_mental)
+
+    return df_mental
 
 def le_curva_mental_trends(termo_pesquisa: str):
     curva_mental = read_csv(csv_google_trends)
     curva_mental.columns = ['Dia', 'Depressão', 'Ansiedade', 'Suicídio', 'Insônia', 'Saúde mental']
-    lista_time_period = list(curva_mental['Dia'])
-    datas_mental = [get_data_covid_eua(data) for data in lista_time_period]
-    curva_mental = curva_mental[termo_pesquisa]
-    return curva_mental, datas_mental
+
+    df_mental = curva_mental[['Dia', termo_pesquisa]]
+
+    for index, data in enumerate(df_mental['Dia']):
+        df_mental['Dia'].iloc[index] = get_data_covid_eua(data)
+
+    df_mental = df_mental.set_index('Dia')
+
+    df_mental = normaliza_dataframe(df_mental)
+
+    return df_mental
 
 # cortando todos os dados de covid anteriores e posteriores ao intervalo da curva de saúde mental
-def centraliza_curva_covid(datas_covid, curva_covid, inicio, fim):
-    inicio_covid = datas_covid.index(inicio)
-    fim_covid = datas_covid.index(fim)
-    lista_covid_sliced = curva_covid[inicio_covid:fim_covid+1]
-    datas_covid_sliced = datas_covid[inicio_covid:fim_covid+1]
-    return lista_covid_sliced, datas_covid_sliced
+def centraliza_curva_covid(df_covid, inicio, fim):
+    return df_covid.loc[inicio:fim]
 
 # reduzindo a quantidade de ocorrências de covid
 # calcula a média de cada período do dataset de saúde mental e substitui por esse valor
@@ -126,16 +143,14 @@ def calcula_spline(curva_covid, datas_covid, curva_mental, datas_mental, n_sampl
     datas_mental, curva_mental = spline(datas_mental, curva_mental, n_samples)
     return curva_covid, datas_covid, curva_mental, datas_mental
 
-def plot(curva_covid, datas_covid, curva_mental, datas_mental, label_mental):
-    if datas_covid is None and datas_mental is None:
-        plt.plot(curva_mental, label=label_mental)
-        plt.plot(curva_covid, label='Casos covid')
-    else:
-        plt.plot(datas_mental, curva_mental, label=label_mental)
-        plt.plot(datas_covid, curva_covid, label='Casos covid')
+def plot(df_covid, df_mental, label_mental):
+    plt.plot(df_mental, label=label_mental)
+    plt.plot(df_covid, label='Casos covid')
+
     plt.xlabel('Data da observação')
     plt.ylabel('Quantidade normalizada de casos')
     plt.legend(loc='upper left')
+
     plt.show()
 
 def correlacao(curva_covid, curva_mental):
@@ -143,9 +158,9 @@ def correlacao(curva_covid, curva_mental):
     spearman = spearmanr(curva_covid, curva_mental)[0]
     return pearson, spearman
 
-def granger_causuality(curva_covid, curva_mental, lag_max=4):
-    df = DataFrame(columns=['mental', 'covid'], data=zip(curva_mental, curva_covid))
+def granger_causuality(df_covid, df_mental, lag_max=4):
+    df = concat([df_mental, df_covid], axis=1)
     return grangercausalitytests(df, lag_max)
 
-def diff_primeira_ordem(curva_covid, curva_mental):
-    return np.diff(curva_covid), np.diff(curva_mental)
+def diff_primeira_ordem(df: DataFrame):
+    return df.diff()

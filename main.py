@@ -91,7 +91,7 @@ def testes_google_trends():
     df_covid = diff_primeira_ordem(df_covid)[1:]
     df_mental = diff_primeira_ordem(df_mental)[1:]
 
-    print(granger_causuality(df_covid, df_mental), end="\n\n")
+    #print(granger_causuality(df_covid, df_mental), end="\n\n")
     #plot_pacf(df_mental)
     #plt.show()
     #for lag in range(1, 30):
@@ -100,13 +100,34 @@ def testes_google_trends():
     #    print('Lag:', lag)
     #    print(pearsonr(mental_series, covid_series))
     #    print('------')
-    df = concat([df_mental, df_covid], axis=1)
-    model = VAR(df)
-    model_fit = model.fit(maxlags=8)
-    print(model_fit.summary())
+    #df = concat([df_mental, df_covid], axis=1)
+    #model = VAR(df)
+    #model_fit = model.fit(maxlags=8)
+    #print(model_fit.summary())
     plot(df_covid, df_mental, label_mental=('Pesquisas de ' + argv[1]))
 
     return df_covid, df_mental
+
+def find_lag_order(df_covid, df_mental):
+    df = concat([df_mental, df_covid], axis=1)
+    model = VAR(df)
+    for i in [1,2,3,4,5,6,7,8,9,10]:
+        result = model.fit(i)
+        print('Lag Order =', i)
+        print('AIC : ', result.aic)
+        print('BIC : ', result.bic)
+        print('FPE : ', result.fpe)
+        print('HQIC: ', result.hqic, '\n')
+    return model, df
+
+def fit_model(df, model, lag=8):
+    model_fitted = model.fit(8)
+    print(model_fitted.summary())
+    lag_order = model_fitted.k_ar
+    print(lag_order)  #> 4
+    model_fitted.forecast(df.values[-lag_order:], 15)
+    model_fitted.plot_forecast(20)
+    plt.show()
 
 def testes_cdc():
     df_covid, df_mental = computa_curvas(argv[2], argv[1], argv[3], estadual=False)
@@ -139,7 +160,7 @@ def testes_cdc():
     return df_covid, df_mental
 
 def previsao_ansiedade(df_covid, df_mental, inicio):
-    coefs = [-0.482762, -2.250621, -0.432519, -1.374894, -0.435818, -0.256508, -0.291726, 1.279731, 0.877817]
+    coefs = [-0.497103, -2.093935, -0.433451, -1.403782, -0.425816, -0.288431, -0.301580, 1.255962, 0.852093]
     lags = [1, 1, 2, 2, 3, 4, 5, 6, 7]
     curvas = ['mental', 'covid', 'mental', 'covid', 'mental', 'mental', 'mental', 'covid', 'covid']
     df_ansiedade = DataFrame(columns=df_mental.columns)
@@ -153,7 +174,9 @@ def previsao_ansiedade(df_covid, df_mental, inicio):
     plt.show()
 
 df_covid, df_mental = testes_google_trends()
-previsao_ansiedade(df_covid, df_mental, 10)
+model, df = find_lag_order(df_covid, df_mental)
+fit_model(df, model)
+#previsao_ansiedade(df_covid, df_mental, 10)
 
 #correlacoes = []
 #for doenca in ['ansiedade', 'depressao', 'ambos']:

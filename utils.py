@@ -16,7 +16,7 @@ atributo_ambos = 'Symptoms of Anxiety Disorder or Depressive Disorder'
 csv_covid = 'rows.csv accessType=DOWNLOAD.csv'
 csv_covid_EUA = 'owid-covid-data (1).csv'
 csv_mental = 'Indicators_of_Anxiety_or_Depression_Based_on_Reported_Frequency_of_Symptoms_During_Last_7_Days.csv'
-csv_google_trends = 'google-data.csv'
+csv_google_trends = 'trends_47.csv'
 
 #recebe arrays x e y
 def spline(x_axis, y_axis, n_samples):
@@ -136,7 +136,7 @@ def le_curva_mental_EUA(doenca):
 
 def le_curva_mental_trends(termo_pesquisa: str):
     curva_mental = read_csv(csv_google_trends)
-    curva_mental.columns = ['Dia', 'Depressão', 'Ansiedade', 'Suicídio', 'Insônia', 'Saúde mental']
+    #curva_mental.columns = ['Dia', 'Depressão', 'Ansiedade', 'Suicídio', 'Insônia', 'Saúde mental']
 
     df_mental = curva_mental[['Dia', termo_pesquisa]]
 

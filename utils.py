@@ -46,9 +46,7 @@ def get_data_covid_eua(date):
     return datetime.datetime.strptime(date, '%Y-%m-%d')
 
 def normaliza_dataframe(df: DataFrame):
-    media = df.mean()[0]
-    desvio = df.std()[0]
-    df = (df - media) / desvio
+    df = (df - df.mean()) / df.std()
     return df
 
 # carrega o dataset de covid de determinado estado americano
@@ -163,10 +161,17 @@ def substitui_media_periodo(df_covid, periodos_mental):
         df_covid_final.loc[media] = df_covid.loc[inicio:fim].mean()[0]
     return df_covid_final
 
-def calcula_spline(curva_covid, datas_covid, curva_mental, datas_mental, n_samples):
-    datas_covid, curva_covid = spline(datas_covid, curva_covid, n_samples)
-    datas_mental, curva_mental = spline(datas_mental, curva_mental, n_samples)
-    return curva_covid, datas_covid, curva_mental, datas_mental
+def calcula_spline(df_covid, df_mental, n_samples=None):
+    if n_samples is None:
+        n_samples = 4 * len(df_covid)
+
+    datas_covid, curva_covid = spline(df_covid.index.to_list(), df_covid[df_covid.columns[0]].to_list(), n_samples)
+    datas_mental, curva_mental = spline(df_mental.index.to_list(), df_mental[df_mental.columns[0]].to_list(), n_samples)
+
+    df_covid = DataFrame(curva_covid, index=datas_covid, columns=['covid'])
+    df_mental = DataFrame(curva_mental, index=datas_mental, columns=['mental'])
+
+    return df_covid, df_mental
 
 def plot(df_covid, df_mental, label_mental):
     plt.plot(df_mental, label=label_mental)
@@ -183,7 +188,7 @@ def correlacao(curva_covid, curva_mental):
     spearman = spearmanr(curva_covid, curva_mental)[0]
     return pearson, spearman
 
-def granger_causuality(df_covid, df_mental, lag_max=4):
+def granger_causuality(df_covid, df_mental, lag_max=10):
     df = concat([df_mental, df_covid], axis=1)
     return grangercausalitytests(df, lag_max)
 

@@ -174,9 +174,9 @@ def previsao_ansiedade(df_covid, df_mental, inicio):
     plt.show()
 
 df_covid, df_mental = testes_google_trends()
-model, df = find_lag_order(df_covid, df_mental)
-fit_model(df, model)
-#previsao_ansiedade(df_covid, df_mental, 10)
+#model, df = find_lag_order(df_covid, df_mental)
+#fit_model(df, model)
+previsao_ansiedade(df_covid, df_mental, 50)
 
 #correlacoes = []
 #for doenca in ['ansiedade', 'depressao', 'ambos']:

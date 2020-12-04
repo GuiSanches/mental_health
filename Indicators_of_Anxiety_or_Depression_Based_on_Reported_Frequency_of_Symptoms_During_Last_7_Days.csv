@@ -3206,3 +3206,843 @@ Phase,Indicator,Group,State,Subgroup,Time Period,Time Period Label,Value,Low CI,
 2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,West Virginia,West Virginia,15,Sep 16 - Sep 28,39.2,33.3,45.4,33.3 - 45.4,38.5-47.6
 2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Wisconsin,Wisconsin,15,Sep 16 - Sep 28,30.8,26.9,34.9,26.9 - 34.9,27.3-33.3
 2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Wyoming,Wyoming,15,Sep 16 - Sep 28,33.2,28.4,38.3,28.4 - 38.3,27.3-33.3
+2,Symptoms of Depressive Disorder,National Estimate,United States,United States,16,Sep 30 - Oct 12,25.4,24.8,26.0,24.8 - 26.0,
+2,Symptoms of Depressive Disorder,By Age,United States,18 - 29 years,16,Sep 30 - Oct 12,39.3,37.1,41.5,37.1 - 41.5,
+2,Symptoms of Depressive Disorder,By Age,United States,30 - 39 years,16,Sep 30 - Oct 12,28.4,27.1,29.8,27.1 - 29.8,
+2,Symptoms of Depressive Disorder,By Age,United States,40 - 49 years,16,Sep 30 - Oct 12,26.4,25.0,28.0,25.0 - 28.0,
+2,Symptoms of Depressive Disorder,By Age,United States,50 - 59 years,16,Sep 30 - Oct 12,22.6,21.5,23.8,21.5 - 23.8,
+2,Symptoms of Depressive Disorder,By Age,United States,60 - 69 years,16,Sep 30 - Oct 12,19.6,18.3,21.0,18.3 - 21.0,
+2,Symptoms of Depressive Disorder,By Age,United States,70 - 79 years,16,Sep 30 - Oct 12,15.0,13.6,16.5,13.6 - 16.5,
+2,Symptoms of Depressive Disorder,By Age,United States,80 years and above,16,Sep 30 - Oct 12,10.8,8.1,14.1,8.1 - 14.1,
+2,Symptoms of Depressive Disorder,By Gender,United States,Male,16,Sep 30 - Oct 12,23.5,22.5,24.4,22.5 - 24.4,
+2,Symptoms of Depressive Disorder,By Gender,United States,Female,16,Sep 30 - Oct 12,27.2,26.5,28.0,26.5 - 28.0,
+2,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,Hispanic or Latino,16,Sep 30 - Oct 12,31.5,28.9,34.2,28.9 - 34.2,
+2,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic white, single race",16,Sep 30 - Oct 12,23.3,22.7,23.9,22.7 - 23.9,
+2,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic black, single race",16,Sep 30 - Oct 12,29.2,27.1,31.4,27.1 - 31.4,
+2,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic Asian, single race",16,Sep 30 - Oct 12,19.0,17.1,21.1,17.1 - 21.1,
+2,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic, other races and multiple races",16,Sep 30 - Oct 12,33.6,30.4,37.0,30.4 - 37.0,
+2,Symptoms of Depressive Disorder,By Education,United States,Less than a high school diploma,16,Sep 30 - Oct 12,32.0,27.9,36.3,27.9 - 36.3,
+2,Symptoms of Depressive Disorder,By Education,United States,High school diploma or GED,16,Sep 30 - Oct 12,26.9,25.5,28.4,25.5 - 28.4,
+2,Symptoms of Depressive Disorder,By Education,United States,Some college/Associate's degree,16,Sep 30 - Oct 12,29.0,28.1,30.0,28.1 - 30.0,
+2,Symptoms of Depressive Disorder,By Education,United States,Bachelor's degree or higher,16,Sep 30 - Oct 12,19.1,18.6,19.6,18.6 - 19.6,
+2,Symptoms of Depressive Disorder,By State,Alabama,Alabama,16,Sep 30 - Oct 12,25.0,20.9,29.4,20.9 - 29.4,24.5-26.0
+2,Symptoms of Depressive Disorder,By State,Alaska,Alaska,16,Sep 30 - Oct 12,27.1,24.0,30.4,24.0 - 30.4,26.1-31.5
+2,Symptoms of Depressive Disorder,By State,Arizona,Arizona,16,Sep 30 - Oct 12,25.0,22.1,28.0,22.1 - 28.0,24.5-26.0
+2,Symptoms of Depressive Disorder,By State,Arkansas,Arkansas,16,Sep 30 - Oct 12,30.2,25.6,35.1,25.6 - 35.1,26.1-31.5
+2,Symptoms of Depressive Disorder,By State,California,California,16,Sep 30 - Oct 12,29.4,27.1,31.8,27.1 - 31.8,26.1-31.5
+2,Symptoms of Depressive Disorder,By State,Colorado,Colorado,16,Sep 30 - Oct 12,23.8,21.3,26.4,21.3 - 26.4,22.5-24.4
+2,Symptoms of Depressive Disorder,By State,Connecticut,Connecticut,16,Sep 30 - Oct 12,22.9,19.9,26.0,19.9 - 26.0,22.5-24.4
+2,Symptoms of Depressive Disorder,By State,Delaware,Delaware,16,Sep 30 - Oct 12,24.6,19.6,30.1,19.6 - 30.1,24.5-26.0
+2,Symptoms of Depressive Disorder,By State,District of Columbia,District of Columbia,16,Sep 30 - Oct 12,19.9,15.1,25.4,15.1 - 25.4,16.6-22.4
+2,Symptoms of Depressive Disorder,By State,Florida,Florida,16,Sep 30 - Oct 12,26.0,23.6,28.5,23.6 - 28.5,24.5-26.0
+2,Symptoms of Depressive Disorder,By State,Georgia,Georgia,16,Sep 30 - Oct 12,23.9,20.2,27.8,20.2 - 27.8,22.5-24.4
+2,Symptoms of Depressive Disorder,By State,Hawaii,Hawaii,16,Sep 30 - Oct 12,30.1,24.9,35.7,24.9 - 35.7,26.1-31.5
+2,Symptoms of Depressive Disorder,By State,Idaho,Idaho,16,Sep 30 - Oct 12,21.0,18.3,24.0,18.3 - 24.0,16.6-22.4
+2,Symptoms of Depressive Disorder,By State,Illinois,Illinois,16,Sep 30 - Oct 12,24.1,21.1,27.4,21.1 - 27.4,22.5-24.4
+2,Symptoms of Depressive Disorder,By State,Indiana,Indiana,16,Sep 30 - Oct 12,23.1,20.2,26.2,20.2 - 26.2,22.5-24.4
+2,Symptoms of Depressive Disorder,By State,Iowa,Iowa,16,Sep 30 - Oct 12,19.6,15.5,24.2,15.5 - 24.2,16.6-22.4
+2,Symptoms of Depressive Disorder,By State,Kansas,Kansas,16,Sep 30 - Oct 12,22.7,18.9,26.7,18.9 - 26.7,22.5-24.4
+2,Symptoms of Depressive Disorder,By State,Kentucky,Kentucky,16,Sep 30 - Oct 12,31.5,27.0,36.4,27.0 - 36.4,26.1-31.5
+2,Symptoms of Depressive Disorder,By State,Louisiana,Louisiana,16,Sep 30 - Oct 12,28.4,25.0,32.0,25.0 - 32.0,26.1-31.5
+2,Symptoms of Depressive Disorder,By State,Maine,Maine,16,Sep 30 - Oct 12,24.4,19.6,29.6,19.6 - 29.6,22.5-24.4
+2,Symptoms of Depressive Disorder,By State,Maryland,Maryland,16,Sep 30 - Oct 12,24.4,21.8,27.2,21.8 - 27.2,22.5-24.4
+2,Symptoms of Depressive Disorder,By State,Massachusetts,Massachusetts,16,Sep 30 - Oct 12,22.5,19.4,25.8,19.4 - 25.8,22.5-24.4
+2,Symptoms of Depressive Disorder,By State,Michigan,Michigan,16,Sep 30 - Oct 12,25.6,22.1,29.4,22.1 - 29.4,24.5-26.0
+2,Symptoms of Depressive Disorder,By State,Minnesota,Minnesota,16,Sep 30 - Oct 12,19.9,16.9,23.2,16.9 - 23.2,16.6-22.4
+2,Symptoms of Depressive Disorder,By State,Mississippi,Mississippi,16,Sep 30 - Oct 12,25.1,21.4,29.1,21.4 - 29.1,24.5-26.0
+2,Symptoms of Depressive Disorder,By State,Missouri,Missouri,16,Sep 30 - Oct 12,25.5,22.2,29.0,22.2 - 29.0,24.5-26.0
+2,Symptoms of Depressive Disorder,By State,Montana,Montana,16,Sep 30 - Oct 12,19.9,16.5,23.6,16.5 - 23.6,16.6-22.4
+2,Symptoms of Depressive Disorder,By State,Nebraska,Nebraska,16,Sep 30 - Oct 12,20.9,18.0,24.0,18.0 - 24.0,16.6-22.4
+2,Symptoms of Depressive Disorder,By State,Nevada,Nevada,16,Sep 30 - Oct 12,29.2,25.1,33.6,25.1 - 33.6,26.1-31.5
+2,Symptoms of Depressive Disorder,By State,New Hampshire,New Hampshire,16,Sep 30 - Oct 12,19.8,15.5,24.7,15.5 - 24.7,16.6-22.4
+2,Symptoms of Depressive Disorder,By State,New Jersey,New Jersey,16,Sep 30 - Oct 12,22.5,19.6,25.8,19.6 - 25.8,22.5-24.4
+2,Symptoms of Depressive Disorder,By State,New Mexico,New Mexico,16,Sep 30 - Oct 12,26.1,22.4,30.0,22.4 - 30.0,26.1-31.5
+2,Symptoms of Depressive Disorder,By State,New York,New York,16,Sep 30 - Oct 12,23.3,19.8,27.1,19.8 - 27.1,22.5-24.4
+2,Symptoms of Depressive Disorder,By State,North Carolina,North Carolina,16,Sep 30 - Oct 12,25.7,21.3,30.5,21.3 - 30.5,24.5-26.0
+2,Symptoms of Depressive Disorder,By State,North Dakota,North Dakota,16,Sep 30 - Oct 12,16.6,13.1,20.7,13.1 - 20.7,16.6-22.4
+2,Symptoms of Depressive Disorder,By State,Ohio,Ohio,16,Sep 30 - Oct 12,25.5,22.4,28.8,22.4 - 28.8,24.5-26.0
+2,Symptoms of Depressive Disorder,By State,Oklahoma,Oklahoma,16,Sep 30 - Oct 12,27.2,24.0,30.7,24.0 - 30.7,26.1-31.5
+2,Symptoms of Depressive Disorder,By State,Oregon,Oregon,16,Sep 30 - Oct 12,24.9,22.6,27.3,22.6 - 27.3,24.5-26.0
+2,Symptoms of Depressive Disorder,By State,Pennsylvania,Pennsylvania,16,Sep 30 - Oct 12,25.1,21.9,28.6,21.9 - 28.6,24.5-26.0
+2,Symptoms of Depressive Disorder,By State,Rhode Island,Rhode Island,16,Sep 30 - Oct 12,22.4,18.5,26.8,18.5 - 26.8,16.6-22.4
+2,Symptoms of Depressive Disorder,By State,South Carolina,South Carolina,16,Sep 30 - Oct 12,20.3,16.8,24.3,16.8 - 24.3,16.6-22.4
+2,Symptoms of Depressive Disorder,By State,South Dakota,South Dakota,16,Sep 30 - Oct 12,19.0,16.1,22.3,16.1 - 22.3,16.6-22.4
+2,Symptoms of Depressive Disorder,By State,Tennessee,Tennessee,16,Sep 30 - Oct 12,24.5,20.9,28.3,20.9 - 28.3,24.5-26.0
+2,Symptoms of Depressive Disorder,By State,Texas,Texas,16,Sep 30 - Oct 12,29.0,25.5,32.8,25.5 - 32.8,26.1-31.5
+2,Symptoms of Depressive Disorder,By State,Utah,Utah,16,Sep 30 - Oct 12,23.5,21.5,25.7,21.5 - 25.7,22.5-24.4
+2,Symptoms of Depressive Disorder,By State,Vermont,Vermont,16,Sep 30 - Oct 12,30.1,24.9,35.6,24.9 - 35.6,26.1-31.5
+2,Symptoms of Depressive Disorder,By State,Virginia,Virginia,16,Sep 30 - Oct 12,23.1,20.1,26.3,20.1 - 26.3,22.5-24.4
+2,Symptoms of Depressive Disorder,By State,Washington,Washington,16,Sep 30 - Oct 12,25.2,22.7,27.7,22.7 - 27.7,24.5-26.0
+2,Symptoms of Depressive Disorder,By State,West Virginia,West Virginia,16,Sep 30 - Oct 12,27.5,21.7,33.9,21.7 - 33.9,26.1-31.5
+2,Symptoms of Depressive Disorder,By State,Wisconsin,Wisconsin,16,Sep 30 - Oct 12,21.6,19.0,24.4,19.0 - 24.4,16.6-22.4
+2,Symptoms of Depressive Disorder,By State,Wyoming,Wyoming,16,Sep 30 - Oct 12,22.2,16.8,28.4,16.8 - 28.4,16.6-22.4
+2,Symptoms of Anxiety Disorder,National Estimate,United States,United States,16,Sep 30 - Oct 12,32.4,31.7,33.1,31.7 - 33.1,
+2,Symptoms of Anxiety Disorder,By Age,United States,18 - 29 years,16,Sep 30 - Oct 12,44.7,42.3,47.0,42.3 - 47.0,
+2,Symptoms of Anxiety Disorder,By Age,United States,30 - 39 years,16,Sep 30 - Oct 12,38.1,36.7,39.6,36.7 - 39.6,
+2,Symptoms of Anxiety Disorder,By Age,United States,40 - 49 years,16,Sep 30 - Oct 12,35.3,33.9,36.7,33.9 - 36.7,
+2,Symptoms of Anxiety Disorder,By Age,United States,50 - 59 years,16,Sep 30 - Oct 12,31.1,29.8,32.4,29.8 - 32.4,
+2,Symptoms of Anxiety Disorder,By Age,United States,60 - 69 years,16,Sep 30 - Oct 12,24.8,23.5,26.1,23.5 - 26.1,
+2,Symptoms of Anxiety Disorder,By Age,United States,70 - 79 years,16,Sep 30 - Oct 12,18.0,16.5,19.7,16.5 - 19.7,
+2,Symptoms of Anxiety Disorder,By Age,United States,80 years and above,16,Sep 30 - Oct 12,15.0,12.2,18.2,12.2 - 18.2,
+2,Symptoms of Anxiety Disorder,By Gender,United States,Male,16,Sep 30 - Oct 12,28.1,27.0,29.2,27.0 - 29.2,
+2,Symptoms of Anxiety Disorder,By Gender,United States,Female,16,Sep 30 - Oct 12,36.4,35.6,37.2,35.6 - 37.2,
+2,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,Hispanic or Latino,16,Sep 30 - Oct 12,36.4,33.7,39.2,33.7 - 39.2,
+2,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic white, single race",16,Sep 30 - Oct 12,31.6,30.9,32.4,30.9 - 32.4,
+2,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic black, single race",16,Sep 30 - Oct 12,32.2,30.2,34.1,30.2 - 34.1,
+2,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic Asian, single race",16,Sep 30 - Oct 12,24.8,22.2,27.5,22.2 - 27.5,
+2,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic, other races and multiple races",16,Sep 30 - Oct 12,39.7,35.6,43.8,35.6 - 43.8,
+2,Symptoms of Anxiety Disorder,By Education,United States,Less than a high school diploma,16,Sep 30 - Oct 12,37.8,33.6,42.2,33.6 - 42.2,
+2,Symptoms of Anxiety Disorder,By Education,United States,High school diploma or GED,16,Sep 30 - Oct 12,30.8,29.1,32.6,29.1 - 32.6,
+2,Symptoms of Anxiety Disorder,By Education,United States,Some college/Associate's degree,16,Sep 30 - Oct 12,35.2,34.1,36.4,34.1 - 36.4,
+2,Symptoms of Anxiety Disorder,By Education,United States,Bachelor's degree or higher,16,Sep 30 - Oct 12,29.9,29.1,30.6,29.1 - 30.6,
+2,Symptoms of Anxiety Disorder,By State,Alabama,Alabama,16,Sep 30 - Oct 12,29.4,25.7,33.3,25.7 - 33.3,24.7-29.4
+2,Symptoms of Anxiety Disorder,By State,Alaska,Alaska,16,Sep 30 - Oct 12,32.6,28.6,36.8,28.6 - 36.8,31.8-33.9
+2,Symptoms of Anxiety Disorder,By State,Arizona,Arizona,16,Sep 30 - Oct 12,31.7,28.5,35.2,28.5 - 35.2,29.5-31.7
+2,Symptoms of Anxiety Disorder,By State,Arkansas,Arkansas,16,Sep 30 - Oct 12,35.4,31.3,39.6,31.3 - 39.6,34.0-39.3
+2,Symptoms of Anxiety Disorder,By State,California,California,16,Sep 30 - Oct 12,36.2,33.6,38.9,33.6 - 38.9,34.0-39.3
+2,Symptoms of Anxiety Disorder,By State,Colorado,Colorado,16,Sep 30 - Oct 12,32.8,29.6,36.1,29.6 - 36.1,31.8-33.9
+2,Symptoms of Anxiety Disorder,By State,Connecticut,Connecticut,16,Sep 30 - Oct 12,28.4,25.4,31.4,25.4 - 31.4,24.7-29.4
+2,Symptoms of Anxiety Disorder,By State,Delaware,Delaware,16,Sep 30 - Oct 12,32.8,28.7,37.1,28.7 - 37.1,31.8-33.9
+2,Symptoms of Anxiety Disorder,By State,District of Columbia,District of Columbia,16,Sep 30 - Oct 12,34.8,28.8,41.1,28.8 - 41.1,34.0-39.3
+2,Symptoms of Anxiety Disorder,By State,Florida,Florida,16,Sep 30 - Oct 12,31.7,28.4,35.2,28.4 - 35.2,29.5-31.7
+2,Symptoms of Anxiety Disorder,By State,Georgia,Georgia,16,Sep 30 - Oct 12,29.0,25.0,33.3,25.0 - 33.3,24.7-29.4
+2,Symptoms of Anxiety Disorder,By State,Hawaii,Hawaii,16,Sep 30 - Oct 12,30.6,25.7,35.9,25.7 - 35.9,29.5-31.7
+2,Symptoms of Anxiety Disorder,By State,Idaho,Idaho,16,Sep 30 - Oct 12,29.4,26.0,32.9,26.0 - 32.9,24.7-29.4
+2,Symptoms of Anxiety Disorder,By State,Illinois,Illinois,16,Sep 30 - Oct 12,32.2,29.2,35.4,29.2 - 35.4,31.8-33.9
+2,Symptoms of Anxiety Disorder,By State,Indiana,Indiana,16,Sep 30 - Oct 12,30.1,27.0,33.3,27.0 - 33.3,29.5-31.7
+2,Symptoms of Anxiety Disorder,By State,Iowa,Iowa,16,Sep 30 - Oct 12,26.8,22.6,31.3,22.6 - 31.3,24.7-29.4
+2,Symptoms of Anxiety Disorder,By State,Kansas,Kansas,16,Sep 30 - Oct 12,32.3,28.2,36.5,28.2 - 36.5,31.8-33.9
+2,Symptoms of Anxiety Disorder,By State,Kentucky,Kentucky,16,Sep 30 - Oct 12,37.8,33.1,42.7,33.1 - 42.7,34.0-39.3
+2,Symptoms of Anxiety Disorder,By State,Louisiana,Louisiana,16,Sep 30 - Oct 12,36.9,32.6,41.4,32.6 - 41.4,34.0-39.3
+2,Symptoms of Anxiety Disorder,By State,Maine,Maine,16,Sep 30 - Oct 12,33.2,27.3,39.6,27.3 - 39.6,31.8-33.9
+2,Symptoms of Anxiety Disorder,By State,Maryland,Maryland,16,Sep 30 - Oct 12,30.6,28.3,33.1,28.3 - 33.1,29.5-31.7
+2,Symptoms of Anxiety Disorder,By State,Massachusetts,Massachusetts,16,Sep 30 - Oct 12,34.2,31.0,37.6,31.0 - 37.6,34.0-39.3
+2,Symptoms of Anxiety Disorder,By State,Michigan,Michigan,16,Sep 30 - Oct 12,32.9,29.3,36.7,29.3 - 36.7,31.8-33.9
+2,Symptoms of Anxiety Disorder,By State,Minnesota,Minnesota,16,Sep 30 - Oct 12,26.2,23.4,29.1,23.4 - 29.1,24.7-29.4
+2,Symptoms of Anxiety Disorder,By State,Mississippi,Mississippi,16,Sep 30 - Oct 12,30.6,27.0,34.5,27.0 - 34.5,29.5-31.7
+2,Symptoms of Anxiety Disorder,By State,Missouri,Missouri,16,Sep 30 - Oct 12,30.7,27.4,34.1,27.4 - 34.1,29.5-31.7
+2,Symptoms of Anxiety Disorder,By State,Montana,Montana,16,Sep 30 - Oct 12,27.8,23.6,32.4,23.6 - 32.4,24.7-29.4
+2,Symptoms of Anxiety Disorder,By State,Nebraska,Nebraska,16,Sep 30 - Oct 12,28.7,24.9,32.7,24.9 - 32.7,24.7-29.4
+2,Symptoms of Anxiety Disorder,By State,Nevada,Nevada,16,Sep 30 - Oct 12,39.3,34.8,43.9,34.8 - 43.9,34.0-39.3
+2,Symptoms of Anxiety Disorder,By State,New Hampshire,New Hampshire,16,Sep 30 - Oct 12,27.3,22.5,32.4,22.5 - 32.4,24.7-29.4
+2,Symptoms of Anxiety Disorder,By State,New Jersey,New Jersey,16,Sep 30 - Oct 12,34.7,31.8,37.8,31.8 - 37.8,34.0-39.3
+2,Symptoms of Anxiety Disorder,By State,New Mexico,New Mexico,16,Sep 30 - Oct 12,33.9,29.2,38.7,29.2 - 38.7,31.8-33.9
+2,Symptoms of Anxiety Disorder,By State,New York,New York,16,Sep 30 - Oct 12,30.7,27.3,34.2,27.3 - 34.2,29.5-31.7
+2,Symptoms of Anxiety Disorder,By State,North Carolina,North Carolina,16,Sep 30 - Oct 12,29.7,25.4,34.3,25.4 - 34.3,29.5-31.7
+2,Symptoms of Anxiety Disorder,By State,North Dakota,North Dakota,16,Sep 30 - Oct 12,24.7,20.5,29.3,20.5 - 29.3,24.7-29.4
+2,Symptoms of Anxiety Disorder,By State,Ohio,Ohio,16,Sep 30 - Oct 12,33.6,29.3,38.1,29.3 - 38.1,31.8-33.9
+2,Symptoms of Anxiety Disorder,By State,Oklahoma,Oklahoma,16,Sep 30 - Oct 12,33.9,30.3,37.5,30.3 - 37.5,31.8-33.9
+2,Symptoms of Anxiety Disorder,By State,Oregon,Oregon,16,Sep 30 - Oct 12,35.1,32.7,37.6,32.7 - 37.6,34.0-39.3
+2,Symptoms of Anxiety Disorder,By State,Pennsylvania,Pennsylvania,16,Sep 30 - Oct 12,32.6,29.2,36.1,29.2 - 36.1,31.8-33.9
+2,Symptoms of Anxiety Disorder,By State,Rhode Island,Rhode Island,16,Sep 30 - Oct 12,29.5,25.7,33.6,25.7 - 33.6,29.5-31.7
+2,Symptoms of Anxiety Disorder,By State,South Carolina,South Carolina,16,Sep 30 - Oct 12,28.3,24.0,33.0,24.0 - 33.0,24.7-29.4
+2,Symptoms of Anxiety Disorder,By State,South Dakota,South Dakota,16,Sep 30 - Oct 12,26.9,22.5,31.6,22.5 - 31.6,24.7-29.4
+2,Symptoms of Anxiety Disorder,By State,Tennessee,Tennessee,16,Sep 30 - Oct 12,30.7,27.3,34.4,27.3 - 34.4,29.5-31.7
+2,Symptoms of Anxiety Disorder,By State,Texas,Texas,16,Sep 30 - Oct 12,33.2,29.5,37.2,29.5 - 37.2,31.8-33.9
+2,Symptoms of Anxiety Disorder,By State,Utah,Utah,16,Sep 30 - Oct 12,31.1,28.1,34.1,28.1 - 34.1,29.5-31.7
+2,Symptoms of Anxiety Disorder,By State,Vermont,Vermont,16,Sep 30 - Oct 12,36.9,30.8,43.2,30.8 - 43.2,34.0-39.3
+2,Symptoms of Anxiety Disorder,By State,Virginia,Virginia,16,Sep 30 - Oct 12,28.7,25.9,31.6,25.9 - 31.6,24.7-29.4
+2,Symptoms of Anxiety Disorder,By State,Washington,Washington,16,Sep 30 - Oct 12,34.5,31.4,37.7,31.4 - 37.7,34.0-39.3
+2,Symptoms of Anxiety Disorder,By State,West Virginia,West Virginia,16,Sep 30 - Oct 12,37.1,30.9,43.6,30.9 - 43.6,34.0-39.3
+2,Symptoms of Anxiety Disorder,By State,Wisconsin,Wisconsin,16,Sep 30 - Oct 12,30.7,26.8,34.8,26.8 - 34.8,29.5-31.7
+2,Symptoms of Anxiety Disorder,By State,Wyoming,Wyoming,16,Sep 30 - Oct 12,27.0,22.5,31.9,22.5 - 31.9,24.7-29.4
+2,Symptoms of Anxiety Disorder or Depressive Disorder,National Estimate,United States,United States,16,Sep 30 - Oct 12,37.5,36.8,38.2,36.8 - 38.2,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,18 - 29 years,16,Sep 30 - Oct 12,52.8,50.5,55.1,50.5 - 55.1,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,30 - 39 years,16,Sep 30 - Oct 12,43.2,41.7,44.7,41.7 - 44.7,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,40 - 49 years,16,Sep 30 - Oct 12,39.9,38.4,41.5,38.4 - 41.5,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,50 - 59 years,16,Sep 30 - Oct 12,34.8,33.5,36.2,33.5 - 36.2,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,60 - 69 years,16,Sep 30 - Oct 12,29.5,28.2,30.9,28.2 - 30.9,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,70 - 79 years,16,Sep 30 - Oct 12,22.8,21.1,24.6,21.1 - 24.6,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,80 years and above,16,Sep 30 - Oct 12,17.9,15.0,21.1,15.0 - 21.1,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Gender,United States,Male,16,Sep 30 - Oct 12,33.1,32.1,34.1,32.1 - 34.1,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Gender,United States,Female,16,Sep 30 - Oct 12,41.6,40.8,42.4,40.8 - 42.4,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,Hispanic or Latino,16,Sep 30 - Oct 12,43.5,40.9,46.1,40.9 - 46.1,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic white, single race",16,Sep 30 - Oct 12,35.9,35.1,36.6,35.1 - 36.6,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic black, single race",16,Sep 30 - Oct 12,39.7,37.6,41.8,37.6 - 41.8,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic Asian, single race",16,Sep 30 - Oct 12,29.2,26.4,32.0,26.4 - 32.0,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic, other races and multiple races",16,Sep 30 - Oct 12,45.7,41.9,49.5,41.9 - 49.5,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Education,United States,Less than a high school diploma,16,Sep 30 - Oct 12,43.2,39.0,47.5,39.0 - 47.5,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Education,United States,High school diploma or GED,16,Sep 30 - Oct 12,37.1,35.5,38.8,35.5 - 38.8,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Education,United States,Some college/Associate's degree,16,Sep 30 - Oct 12,40.9,39.8,42.0,39.8 - 42.0,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Education,United States,Bachelor's degree or higher,16,Sep 30 - Oct 12,33.3,32.5,34.0,32.5 - 34.0,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Alabama,Alabama,16,Sep 30 - Oct 12,33.6,29.6,37.8,29.6 - 37.8,27.8-34.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Alaska,Alaska,16,Sep 30 - Oct 12,37.4,33.5,41.3,33.5 - 41.3,36.7-38.8
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Arizona,Arizona,16,Sep 30 - Oct 12,37.8,33.9,41.8,33.9 - 41.8,36.7-38.8
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Arkansas,Arkansas,16,Sep 30 - Oct 12,42.3,37.5,47.2,37.5 - 47.2,38.9-44.0
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,California,California,16,Sep 30 - Oct 12,42.4,40.0,44.9,40.0 - 44.9,38.9-44.0
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Colorado,Colorado,16,Sep 30 - Oct 12,37.5,34.0,41.1,34.0 - 41.1,36.7-38.8
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Connecticut,Connecticut,16,Sep 30 - Oct 12,34.6,31.0,38.2,31.0 - 38.2,34.4-36.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Delaware,Delaware,16,Sep 30 - Oct 12,39.0,34.1,44.1,34.1 - 44.1,38.9-44.0
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,District of Columbia,District of Columbia,16,Sep 30 - Oct 12,37.1,31.3,43.3,31.3 - 43.3,36.7-38.8
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Florida,Florida,16,Sep 30 - Oct 12,37.8,34.5,41.1,34.5 - 41.1,36.7-38.8
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Georgia,Georgia,16,Sep 30 - Oct 12,34.7,30.3,39.3,30.3 - 39.3,34.4-36.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Hawaii,Hawaii,16,Sep 30 - Oct 12,40.2,34.6,46.0,34.6 - 46.0,38.9-44.0
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Idaho,Idaho,16,Sep 30 - Oct 12,33.3,29.9,36.7,29.9 - 36.7,27.8-34.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Illinois,Illinois,16,Sep 30 - Oct 12,36.6,33.4,40.0,33.4 - 40.0,34.4-36.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Indiana,Indiana,16,Sep 30 - Oct 12,34.3,31.2,37.6,31.2 - 37.6,27.8-34.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Iowa,Iowa,16,Sep 30 - Oct 12,29.6,25.0,34.6,25.0 - 34.6,27.8-34.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Kansas,Kansas,16,Sep 30 - Oct 12,36.2,31.9,40.7,31.9 - 40.7,34.4-36.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Kentucky,Kentucky,16,Sep 30 - Oct 12,42.8,38.1,47.7,38.1 - 47.7,38.9-44.0
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Louisiana,Louisiana,16,Sep 30 - Oct 12,41.5,37.3,45.7,37.3 - 45.7,38.9-44.0
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Maine,Maine,16,Sep 30 - Oct 12,36.3,30.8,42.1,30.8 - 42.1,34.4-36.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Maryland,Maryland,16,Sep 30 - Oct 12,36.9,33.8,40.1,33.8 - 40.1,36.7-38.8
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Massachusetts,Massachusetts,16,Sep 30 - Oct 12,37.6,34.3,41.0,34.3 - 41.0,36.7-38.8
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Michigan,Michigan,16,Sep 30 - Oct 12,37.0,33.2,40.8,33.2 - 40.8,36.7-38.8
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Minnesota,Minnesota,16,Sep 30 - Oct 12,30.7,27.6,34.0,27.6 - 34.0,27.8-34.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Mississippi,Mississippi,16,Sep 30 - Oct 12,35.1,31.4,38.9,31.4 - 38.9,34.4-36.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Missouri,Missouri,16,Sep 30 - Oct 12,36.4,33.1,39.9,33.1 - 39.9,34.4-36.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Montana,Montana,16,Sep 30 - Oct 12,32.8,28.5,37.2,28.5 - 37.2,27.8-34.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Nebraska,Nebraska,16,Sep 30 - Oct 12,32.5,28.7,36.4,28.7 - 36.4,27.8-34.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Nevada,Nevada,16,Sep 30 - Oct 12,43.3,38.8,47.9,38.8 - 47.9,38.9-44.0
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,New Hampshire,New Hampshire,16,Sep 30 - Oct 12,31.4,26.5,36.5,26.5 - 36.5,27.8-34.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,New Jersey,New Jersey,16,Sep 30 - Oct 12,39.1,35.7,42.5,35.7 - 42.5,38.9-44.0
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,New Mexico,New Mexico,16,Sep 30 - Oct 12,41.1,36.3,46.0,36.3 - 46.0,38.9-44.0
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,New York,New York,16,Sep 30 - Oct 12,35.2,31.4,39.1,31.4 - 39.1,34.4-36.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,North Carolina,North Carolina,16,Sep 30 - Oct 12,35.8,31.5,40.2,31.5 - 40.2,34.4-36.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,North Dakota,North Dakota,16,Sep 30 - Oct 12,27.8,23.5,32.5,23.5 - 32.5,27.8-34.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Ohio,Ohio,16,Sep 30 - Oct 12,38.5,34.4,42.8,34.4 - 42.8,36.7-38.8
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Oklahoma,Oklahoma,16,Sep 30 - Oct 12,38.1,34.5,41.8,34.5 - 41.8,36.7-38.8
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Oregon,Oregon,16,Sep 30 - Oct 12,39.0,36.3,41.8,36.3 - 41.8,38.9-44.0
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Pennsylvania,Pennsylvania,16,Sep 30 - Oct 12,37.7,34.0,41.5,34.0 - 41.5,36.7-38.8
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Rhode Island,Rhode Island,16,Sep 30 - Oct 12,35.1,31.0,39.4,31.0 - 39.4,34.4-36.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,South Carolina,South Carolina,16,Sep 30 - Oct 12,32.9,28.6,37.4,28.6 - 37.4,27.8-34.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,South Dakota,South Dakota,16,Sep 30 - Oct 12,31.3,26.7,36.2,26.7 - 36.2,27.8-34.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Tennessee,Tennessee,16,Sep 30 - Oct 12,36.2,32.7,39.7,32.7 - 39.7,34.4-36.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Texas,Texas,16,Sep 30 - Oct 12,38.8,34.9,42.8,34.9 - 42.8,36.7-38.8
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Utah,Utah,16,Sep 30 - Oct 12,36.1,33.6,38.7,33.6 - 38.7,34.4-36.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Vermont,Vermont,16,Sep 30 - Oct 12,44.0,38.1,50.1,38.1 - 50.1,38.9-44.0
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Virginia,Virginia,16,Sep 30 - Oct 12,32.9,29.9,36.0,29.9 - 36.0,27.8-34.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Washington,Washington,16,Sep 30 - Oct 12,38.5,35.4,41.8,35.4 - 41.8,36.7-38.8
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,West Virginia,West Virginia,16,Sep 30 - Oct 12,42.8,37.0,48.7,37.0 - 48.7,38.9-44.0
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Wisconsin,Wisconsin,16,Sep 30 - Oct 12,34.5,30.9,38.3,30.9 - 38.3,34.4-36.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Wyoming,Wyoming,16,Sep 30 - Oct 12,33.1,27.3,39.4,27.3 - 39.4,27.8-34.3
+2,Symptoms of Depressive Disorder,National Estimate,United States,United States,17,Oct 14 - Oct 26,26.0,25.4,26.6,25.4 - 26.6,
+2,Symptoms of Depressive Disorder,By Age,United States,18 - 29 years,17,Oct 14 - Oct 26,39.0,36.8,41.2,36.8 - 41.2,
+2,Symptoms of Depressive Disorder,By Age,United States,30 - 39 years,17,Oct 14 - Oct 26,30.3,29.0,31.6,29.0 - 31.6,
+2,Symptoms of Depressive Disorder,By Age,United States,40 - 49 years,17,Oct 14 - Oct 26,26.3,24.9,27.7,24.9 - 27.7,
+2,Symptoms of Depressive Disorder,By Age,United States,50 - 59 years,17,Oct 14 - Oct 26,23.7,22.2,25.3,22.2 - 25.3,
+2,Symptoms of Depressive Disorder,By Age,United States,60 - 69 years,17,Oct 14 - Oct 26,20.4,19.0,21.9,19.0 - 21.9,
+2,Symptoms of Depressive Disorder,By Age,United States,70 - 79 years,17,Oct 14 - Oct 26,15.4,13.8,17.0,13.8 - 17.0,
+2,Symptoms of Depressive Disorder,By Age,United States,80 years and above,17,Oct 14 - Oct 26,13.3,9.3,18.3,9.3 - 18.3,
+2,Symptoms of Depressive Disorder,By Gender,United States,Male,17,Oct 14 - Oct 26,23.7,22.6,24.8,22.6 - 24.8,
+2,Symptoms of Depressive Disorder,By Gender,United States,Female,17,Oct 14 - Oct 26,28.1,27.3,28.9,27.3 - 28.9,
+2,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,Hispanic or Latino,17,Oct 14 - Oct 26,31.3,29.4,33.2,29.4 - 33.2,
+2,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic white, single race",17,Oct 14 - Oct 26,24.0,23.3,24.7,23.3 - 24.7,
+2,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic black, single race",17,Oct 14 - Oct 26,28.7,26.7,30.8,26.7 - 30.8,
+2,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic Asian, single race",17,Oct 14 - Oct 26,23.1,20.4,26.0,20.4 - 26.0,
+2,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic, other races and multiple races",17,Oct 14 - Oct 26,34.4,31.1,37.7,31.1 - 37.7,
+2,Symptoms of Depressive Disorder,By Education,United States,Less than a high school diploma,17,Oct 14 - Oct 26,33.4,29.0,38.1,29.0 - 38.1,
+2,Symptoms of Depressive Disorder,By Education,United States,High school diploma or GED,17,Oct 14 - Oct 26,27.4,26.0,28.7,26.0 - 28.7,
+2,Symptoms of Depressive Disorder,By Education,United States,Some college/Associate's degree,17,Oct 14 - Oct 26,29.6,28.6,30.7,28.6 - 30.7,
+2,Symptoms of Depressive Disorder,By Education,United States,Bachelor's degree or higher,17,Oct 14 - Oct 26,19.8,19.2,20.4,19.2 - 20.4,
+2,Symptoms of Depressive Disorder,By State,Alabama,Alabama,17,Oct 14 - Oct 26,27.7,23.6,32.2,23.6 - 32.2,27.4-33.4
+2,Symptoms of Depressive Disorder,By State,Alaska,Alaska,17,Oct 14 - Oct 26,25.7,22.4,29.2,22.4 - 29.2,25.3-27.3
+2,Symptoms of Depressive Disorder,By State,Arizona,Arizona,17,Oct 14 - Oct 26,30.8,26.3,35.5,26.3 - 35.5,27.4-33.4
+2,Symptoms of Depressive Disorder,By State,Arkansas,Arkansas,17,Oct 14 - Oct 26,27.3,23.0,32.0,23.0 - 32.0,25.3-27.3
+2,Symptoms of Depressive Disorder,By State,California,California,17,Oct 14 - Oct 26,27.7,25.2,30.4,25.2 - 30.4,27.4-33.4
+2,Symptoms of Depressive Disorder,By State,Colorado,Colorado,17,Oct 14 - Oct 26,26.1,23.1,29.3,23.1 - 29.3,25.3-27.3
+2,Symptoms of Depressive Disorder,By State,Connecticut,Connecticut,17,Oct 14 - Oct 26,21.8,18.4,25.4,18.4 - 25.4,19.3-22.4
+2,Symptoms of Depressive Disorder,By State,Delaware,Delaware,17,Oct 14 - Oct 26,23.3,18.5,28.6,18.5 - 28.6,22.5-25.2
+2,Symptoms of Depressive Disorder,By State,District of Columbia,District of Columbia,17,Oct 14 - Oct 26,26.2,20.5,32.5,20.5 - 32.5,25.3-27.3
+2,Symptoms of Depressive Disorder,By State,Florida,Florida,17,Oct 14 - Oct 26,25.9,23.2,28.7,23.2 - 28.7,25.3-27.3
+2,Symptoms of Depressive Disorder,By State,Georgia,Georgia,17,Oct 14 - Oct 26,25.1,22.2,28.3,22.2 - 28.3,22.5-25.2
+2,Symptoms of Depressive Disorder,By State,Hawaii,Hawaii,17,Oct 14 - Oct 26,27.5,23.1,32.3,23.1 - 32.3,27.4-33.4
+2,Symptoms of Depressive Disorder,By State,Idaho,Idaho,17,Oct 14 - Oct 26,25.9,23.0,28.9,23.0 - 28.9,25.3-27.3
+2,Symptoms of Depressive Disorder,By State,Illinois,Illinois,17,Oct 14 - Oct 26,24.2,21.5,27.2,21.5 - 27.2,22.5-25.2
+2,Symptoms of Depressive Disorder,By State,Indiana,Indiana,17,Oct 14 - Oct 26,27.2,24.3,30.3,24.3 - 30.3,25.3-27.3
+2,Symptoms of Depressive Disorder,By State,Iowa,Iowa,17,Oct 14 - Oct 26,22.4,19.3,25.7,19.3 - 25.7,19.3-22.4
+2,Symptoms of Depressive Disorder,By State,Kansas,Kansas,17,Oct 14 - Oct 26,26.2,22.8,29.9,22.8 - 29.9,25.3-27.3
+2,Symptoms of Depressive Disorder,By State,Kentucky,Kentucky,17,Oct 14 - Oct 26,29.5,24.7,34.7,24.7 - 34.7,27.4-33.4
+2,Symptoms of Depressive Disorder,By State,Louisiana,Louisiana,17,Oct 14 - Oct 26,31.6,26.9,36.6,26.9 - 36.6,27.4-33.4
+2,Symptoms of Depressive Disorder,By State,Maine,Maine,17,Oct 14 - Oct 26,22.8,18.3,27.7,18.3 - 27.7,22.5-25.2
+2,Symptoms of Depressive Disorder,By State,Maryland,Maryland,17,Oct 14 - Oct 26,23.8,20.7,27.2,20.7 - 27.2,22.5-25.2
+2,Symptoms of Depressive Disorder,By State,Massachusetts,Massachusetts,17,Oct 14 - Oct 26,25.3,22.4,28.3,22.4 - 28.3,25.3-27.3
+2,Symptoms of Depressive Disorder,By State,Michigan,Michigan,17,Oct 14 - Oct 26,25.8,21.9,29.9,21.9 - 29.9,25.3-27.3
+2,Symptoms of Depressive Disorder,By State,Minnesota,Minnesota,17,Oct 14 - Oct 26,19.3,16.7,22.1,16.7 - 22.1,19.3-22.4
+2,Symptoms of Depressive Disorder,By State,Mississippi,Mississippi,17,Oct 14 - Oct 26,33.4,28.5,38.6,28.5 - 38.6,27.4-33.4
+2,Symptoms of Depressive Disorder,By State,Missouri,Missouri,17,Oct 14 - Oct 26,29.4,25.3,33.7,25.3 - 33.7,27.4-33.4
+2,Symptoms of Depressive Disorder,By State,Montana,Montana,17,Oct 14 - Oct 26,20.1,16.1,24.6,16.1 - 24.6,19.3-22.4
+2,Symptoms of Depressive Disorder,By State,Nebraska,Nebraska,17,Oct 14 - Oct 26,21.8,19.0,25.0,19.0 - 25.0,19.3-22.4
+2,Symptoms of Depressive Disorder,By State,Nevada,Nevada,17,Oct 14 - Oct 26,31.0,27.9,34.2,27.9 - 34.2,27.4-33.4
+2,Symptoms of Depressive Disorder,By State,New Hampshire,New Hampshire,17,Oct 14 - Oct 26,20.8,17.0,25.1,17.0 - 25.1,19.3-22.4
+2,Symptoms of Depressive Disorder,By State,New Jersey,New Jersey,17,Oct 14 - Oct 26,23.4,20.2,26.9,20.2 - 26.9,22.5-25.2
+2,Symptoms of Depressive Disorder,By State,New Mexico,New Mexico,17,Oct 14 - Oct 26,31.9,27.4,36.7,27.4 - 36.7,27.4-33.4
+2,Symptoms of Depressive Disorder,By State,New York,New York,17,Oct 14 - Oct 26,27.0,23.6,30.7,23.6 - 30.7,25.3-27.3
+2,Symptoms of Depressive Disorder,By State,North Carolina,North Carolina,17,Oct 14 - Oct 26,21.4,17.8,25.4,17.8 - 25.4,19.3-22.4
+2,Symptoms of Depressive Disorder,By State,North Dakota,North Dakota,17,Oct 14 - Oct 26,20.2,16.5,24.3,16.5 - 24.3,19.3-22.4
+2,Symptoms of Depressive Disorder,By State,Ohio,Ohio,17,Oct 14 - Oct 26,25.0,21.1,29.3,21.1 - 29.3,22.5-25.2
+2,Symptoms of Depressive Disorder,By State,Oklahoma,Oklahoma,17,Oct 14 - Oct 26,25.9,22.0,30.1,22.0 - 30.1,25.3-27.3
+2,Symptoms of Depressive Disorder,By State,Oregon,Oregon,17,Oct 14 - Oct 26,26.9,23.8,30.2,23.8 - 30.2,25.3-27.3
+2,Symptoms of Depressive Disorder,By State,Pennsylvania,Pennsylvania,17,Oct 14 - Oct 26,22.2,18.9,25.8,18.9 - 25.8,19.3-22.4
+2,Symptoms of Depressive Disorder,By State,Rhode Island,Rhode Island,17,Oct 14 - Oct 26,24.0,19.4,29.0,19.4 - 29.0,22.5-25.2
+2,Symptoms of Depressive Disorder,By State,South Carolina,South Carolina,17,Oct 14 - Oct 26,25.1,21.0,29.6,21.0 - 29.6,22.5-25.2
+2,Symptoms of Depressive Disorder,By State,South Dakota,South Dakota,17,Oct 14 - Oct 26,19.7,15.7,24.4,15.7 - 24.4,19.3-22.4
+2,Symptoms of Depressive Disorder,By State,Tennessee,Tennessee,17,Oct 14 - Oct 26,23.9,20.7,27.3,20.7 - 27.3,22.5-25.2
+2,Symptoms of Depressive Disorder,By State,Texas,Texas,17,Oct 14 - Oct 26,29.4,26.1,32.8,26.1 - 32.8,27.4-33.4
+2,Symptoms of Depressive Disorder,By State,Utah,Utah,17,Oct 14 - Oct 26,22.4,20.2,24.8,20.2 - 24.8,19.3-22.4
+2,Symptoms of Depressive Disorder,By State,Vermont,Vermont,17,Oct 14 - Oct 26,21.5,17.4,26.2,17.4 - 26.2,19.3-22.4
+2,Symptoms of Depressive Disorder,By State,Virginia,Virginia,17,Oct 14 - Oct 26,23.8,21.0,26.7,21.0 - 26.7,22.5-25.2
+2,Symptoms of Depressive Disorder,By State,Washington,Washington,17,Oct 14 - Oct 26,28.4,25.5,31.4,25.5 - 31.4,27.4-33.4
+2,Symptoms of Depressive Disorder,By State,West Virginia,West Virginia,17,Oct 14 - Oct 26,25.2,20.4,30.5,20.4 - 30.5,22.5-25.2
+2,Symptoms of Depressive Disorder,By State,Wisconsin,Wisconsin,17,Oct 14 - Oct 26,22.7,20.2,25.4,20.2 - 25.4,22.5-25.2
+2,Symptoms of Depressive Disorder,By State,Wyoming,Wyoming,17,Oct 14 - Oct 26,20.8,17.1,24.9,17.1 - 24.9,19.3-22.4
+2,Symptoms of Anxiety Disorder,National Estimate,United States,United States,17,Oct 14 - Oct 26,32.8,32.2,33.4,32.2 - 33.4,
+2,Symptoms of Anxiety Disorder,By Age,United States,18 - 29 years,17,Oct 14 - Oct 26,44.0,41.8,46.3,41.8 - 46.3,
+2,Symptoms of Anxiety Disorder,By Age,United States,30 - 39 years,17,Oct 14 - Oct 26,40.4,38.8,42.0,38.8 - 42.0,
+2,Symptoms of Anxiety Disorder,By Age,United States,40 - 49 years,17,Oct 14 - Oct 26,35.1,33.4,36.8,33.4 - 36.8,
+2,Symptoms of Anxiety Disorder,By Age,United States,50 - 59 years,17,Oct 14 - Oct 26,30.4,29.0,31.8,29.0 - 31.8,
+2,Symptoms of Anxiety Disorder,By Age,United States,60 - 69 years,17,Oct 14 - Oct 26,26.5,25.2,27.8,25.2 - 27.8,
+2,Symptoms of Anxiety Disorder,By Age,United States,70 - 79 years,17,Oct 14 - Oct 26,18.2,16.6,19.8,16.6 - 19.8,
+2,Symptoms of Anxiety Disorder,By Age,United States,80 years and above,17,Oct 14 - Oct 26,17.2,12.8,22.3,12.8 - 22.3,
+2,Symptoms of Anxiety Disorder,By Gender,United States,Male,17,Oct 14 - Oct 26,27.6,26.6,28.7,26.6 - 28.7,
+2,Symptoms of Anxiety Disorder,By Gender,United States,Female,17,Oct 14 - Oct 26,37.6,36.9,38.4,36.9 - 38.4,
+2,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,Hispanic or Latino,17,Oct 14 - Oct 26,36.0,33.7,38.3,33.7 - 38.3,
+2,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic white, single race",17,Oct 14 - Oct 26,31.8,31.1,32.5,31.1 - 32.5,
+2,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic black, single race",17,Oct 14 - Oct 26,32.9,31.0,34.8,31.0 - 34.8,
+2,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic Asian, single race",17,Oct 14 - Oct 26,29.2,26.4,32.0,26.4 - 32.0,
+2,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic, other races and multiple races",17,Oct 14 - Oct 26,41.7,38.0,45.5,38.0 - 45.5,
+2,Symptoms of Anxiety Disorder,By Education,United States,Less than a high school diploma,17,Oct 14 - Oct 26,37.0,32.1,42.0,32.1 - 42.0,
+2,Symptoms of Anxiety Disorder,By Education,United States,High school diploma or GED,17,Oct 14 - Oct 26,31.0,29.3,32.6,29.3 - 32.6,
+2,Symptoms of Anxiety Disorder,By Education,United States,Some college/Associate's degree,17,Oct 14 - Oct 26,36.4,35.3,37.6,35.3 - 37.6,
+2,Symptoms of Anxiety Disorder,By Education,United States,Bachelor's degree or higher,17,Oct 14 - Oct 26,30.3,29.5,31.0,29.5 - 31.0,
+2,Symptoms of Anxiety Disorder,By State,Alabama,Alabama,17,Oct 14 - Oct 26,29.9,26.1,33.9,26.1 - 33.9,24.2-30.3
+2,Symptoms of Anxiety Disorder,By State,Alaska,Alaska,17,Oct 14 - Oct 26,33.0,29.1,37.0,29.1 - 37.0,32.6-34.8
+2,Symptoms of Anxiety Disorder,By State,Arizona,Arizona,17,Oct 14 - Oct 26,35.1,31.1,39.3,31.1 - 39.3,34.9-39.5
+2,Symptoms of Anxiety Disorder,By State,Arkansas,Arkansas,17,Oct 14 - Oct 26,32.0,27.8,36.5,27.8 - 36.5,30.4-32.5
+2,Symptoms of Anxiety Disorder,By State,California,California,17,Oct 14 - Oct 26,35.3,32.8,37.8,32.8 - 37.8,34.9-39.5
+2,Symptoms of Anxiety Disorder,By State,Colorado,Colorado,17,Oct 14 - Oct 26,34.1,30.8,37.6,30.8 - 37.6,32.6-34.8
+2,Symptoms of Anxiety Disorder,By State,Connecticut,Connecticut,17,Oct 14 - Oct 26,32.5,29.1,36.0,29.1 - 36.0,30.4-32.5
+2,Symptoms of Anxiety Disorder,By State,Delaware,Delaware,17,Oct 14 - Oct 26,31.7,27.0,36.7,27.0 - 36.7,30.4-32.5
+2,Symptoms of Anxiety Disorder,By State,District of Columbia,District of Columbia,17,Oct 14 - Oct 26,35.1,29.1,41.5,29.1 - 41.5,34.9-39.5
+2,Symptoms of Anxiety Disorder,By State,Florida,Florida,17,Oct 14 - Oct 26,30.3,27.4,33.3,27.4 - 33.3,24.2-30.3
+2,Symptoms of Anxiety Disorder,By State,Georgia,Georgia,17,Oct 14 - Oct 26,33.2,30.2,36.3,30.2 - 36.3,32.6-34.8
+2,Symptoms of Anxiety Disorder,By State,Hawaii,Hawaii,17,Oct 14 - Oct 26,32.2,28.0,36.7,28.0 - 36.7,30.4-32.5
+2,Symptoms of Anxiety Disorder,By State,Idaho,Idaho,17,Oct 14 - Oct 26,31.2,27.9,34.6,27.9 - 34.6,30.4-32.5
+2,Symptoms of Anxiety Disorder,By State,Illinois,Illinois,17,Oct 14 - Oct 26,30.5,28.0,33.1,28.0 - 33.1,30.4-32.5
+2,Symptoms of Anxiety Disorder,By State,Indiana,Indiana,17,Oct 14 - Oct 26,35.3,32.0,38.7,32.0 - 38.7,34.9-39.5
+2,Symptoms of Anxiety Disorder,By State,Iowa,Iowa,17,Oct 14 - Oct 26,29.9,26.4,33.5,26.4 - 33.5,24.2-30.3
+2,Symptoms of Anxiety Disorder,By State,Kansas,Kansas,17,Oct 14 - Oct 26,34.8,30.5,39.4,30.5 - 39.4,32.6-34.8
+2,Symptoms of Anxiety Disorder,By State,Kentucky,Kentucky,17,Oct 14 - Oct 26,35.3,31.3,39.5,31.3 - 39.5,34.9-39.5
+2,Symptoms of Anxiety Disorder,By State,Louisiana,Louisiana,17,Oct 14 - Oct 26,33.6,29.5,38.0,29.5 - 38.0,32.6-34.8
+2,Symptoms of Anxiety Disorder,By State,Maine,Maine,17,Oct 14 - Oct 26,32.5,27.9,37.4,27.9 - 37.4,30.4-32.5
+2,Symptoms of Anxiety Disorder,By State,Maryland,Maryland,17,Oct 14 - Oct 26,33.0,29.5,36.6,29.5 - 36.6,32.6-34.8
+2,Symptoms of Anxiety Disorder,By State,Massachusetts,Massachusetts,17,Oct 14 - Oct 26,33.8,31.0,36.8,31.0 - 36.8,32.6-34.8
+2,Symptoms of Anxiety Disorder,By State,Michigan,Michigan,17,Oct 14 - Oct 26,31.3,27.6,35.2,27.6 - 35.2,30.4-32.5
+2,Symptoms of Anxiety Disorder,By State,Minnesota,Minnesota,17,Oct 14 - Oct 26,25.9,22.9,29.1,22.9 - 29.1,24.2-30.3
+2,Symptoms of Anxiety Disorder,By State,Mississippi,Mississippi,17,Oct 14 - Oct 26,35.9,31.3,40.6,31.3 - 40.6,34.9-39.5
+2,Symptoms of Anxiety Disorder,By State,Missouri,Missouri,17,Oct 14 - Oct 26,35.2,31.3,39.3,31.3 - 39.3,34.9-39.5
+2,Symptoms of Anxiety Disorder,By State,Montana,Montana,17,Oct 14 - Oct 26,29.4,25.3,33.8,25.3 - 33.8,24.2-30.3
+2,Symptoms of Anxiety Disorder,By State,Nebraska,Nebraska,17,Oct 14 - Oct 26,28.6,25.5,31.9,25.5 - 31.9,24.2-30.3
+2,Symptoms of Anxiety Disorder,By State,Nevada,Nevada,17,Oct 14 - Oct 26,37.1,32.8,41.5,32.8 - 41.5,34.9-39.5
+2,Symptoms of Anxiety Disorder,By State,New Hampshire,New Hampshire,17,Oct 14 - Oct 26,26.5,23.3,29.8,23.3 - 29.8,24.2-30.3
+2,Symptoms of Anxiety Disorder,By State,New Jersey,New Jersey,17,Oct 14 - Oct 26,31.0,27.5,34.7,27.5 - 34.7,30.4-32.5
+2,Symptoms of Anxiety Disorder,By State,New Mexico,New Mexico,17,Oct 14 - Oct 26,39.5,35.0,44.2,35.0 - 44.2,34.9-39.5
+2,Symptoms of Anxiety Disorder,By State,New York,New York,17,Oct 14 - Oct 26,34.3,30.5,38.3,30.5 - 38.3,32.6-34.8
+2,Symptoms of Anxiety Disorder,By State,North Carolina,North Carolina,17,Oct 14 - Oct 26,27.0,23.3,30.9,23.3 - 30.9,24.2-30.3
+2,Symptoms of Anxiety Disorder,By State,North Dakota,North Dakota,17,Oct 14 - Oct 26,28.0,23.4,33.0,23.4 - 33.0,24.2-30.3
+2,Symptoms of Anxiety Disorder,By State,Ohio,Ohio,17,Oct 14 - Oct 26,31.7,27.6,35.9,27.6 - 35.9,30.4-32.5
+2,Symptoms of Anxiety Disorder,By State,Oklahoma,Oklahoma,17,Oct 14 - Oct 26,34.8,30.9,38.8,30.9 - 38.8,32.6-34.8
+2,Symptoms of Anxiety Disorder,By State,Oregon,Oregon,17,Oct 14 - Oct 26,36.6,33.5,39.8,33.5 - 39.8,34.9-39.5
+2,Symptoms of Anxiety Disorder,By State,Pennsylvania,Pennsylvania,17,Oct 14 - Oct 26,31.6,28.3,34.9,28.3 - 34.9,30.4-32.5
+2,Symptoms of Anxiety Disorder,By State,Rhode Island,Rhode Island,17,Oct 14 - Oct 26,35.6,30.6,40.8,30.6 - 40.8,34.9-39.5
+2,Symptoms of Anxiety Disorder,By State,South Carolina,South Carolina,17,Oct 14 - Oct 26,32.8,28.8,36.9,28.8 - 36.9,32.6-34.8
+2,Symptoms of Anxiety Disorder,By State,South Dakota,South Dakota,17,Oct 14 - Oct 26,24.2,20.3,28.4,20.3 - 28.4,24.2-30.3
+2,Symptoms of Anxiety Disorder,By State,Tennessee,Tennessee,17,Oct 14 - Oct 26,32.0,28.1,36.0,28.1 - 36.0,30.4-32.5
+2,Symptoms of Anxiety Disorder,By State,Texas,Texas,17,Oct 14 - Oct 26,34.7,31.7,37.8,31.7 - 37.8,32.6-34.8
+2,Symptoms of Anxiety Disorder,By State,Utah,Utah,17,Oct 14 - Oct 26,29.1,26.8,31.4,26.8 - 31.4,24.2-30.3
+2,Symptoms of Anxiety Disorder,By State,Vermont,Vermont,17,Oct 14 - Oct 26,33.3,28.8,38.1,28.8 - 38.1,32.6-34.8
+2,Symptoms of Anxiety Disorder,By State,Virginia,Virginia,17,Oct 14 - Oct 26,30.0,26.4,33.8,26.4 - 33.8,24.2-30.3
+2,Symptoms of Anxiety Disorder,By State,Washington,Washington,17,Oct 14 - Oct 26,35.9,32.7,39.2,32.7 - 39.2,34.9-39.5
+2,Symptoms of Anxiety Disorder,By State,West Virginia,West Virginia,17,Oct 14 - Oct 26,31.9,27.3,36.8,27.3 - 36.8,30.4-32.5
+2,Symptoms of Anxiety Disorder,By State,Wisconsin,Wisconsin,17,Oct 14 - Oct 26,32.1,29.0,35.3,29.0 - 35.3,30.4-32.5
+2,Symptoms of Anxiety Disorder,By State,Wyoming,Wyoming,17,Oct 14 - Oct 26,28.3,23.8,33.0,23.8 - 33.0,24.2-30.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,National Estimate,United States,United States,17,Oct 14 - Oct 26,37.8,37.2,38.5,37.2 - 38.5,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,18 - 29 years,17,Oct 14 - Oct 26,52.1,49.8,54.4,49.8 - 54.4,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,30 - 39 years,17,Oct 14 - Oct 26,44.9,43.4,46.5,43.4 - 46.5,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,40 - 49 years,17,Oct 14 - Oct 26,39.7,38.0,41.3,38.0 - 41.3,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,50 - 59 years,17,Oct 14 - Oct 26,34.8,33.3,36.3,33.3 - 36.3,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,60 - 69 years,17,Oct 14 - Oct 26,30.7,29.1,32.3,29.1 - 32.3,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,70 - 79 years,17,Oct 14 - Oct 26,23.1,21.2,25.0,21.2 - 25.0,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,80 years and above,17,Oct 14 - Oct 26,19.3,14.7,24.7,14.7 - 24.7,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Gender,United States,Male,17,Oct 14 - Oct 26,32.9,31.8,34.0,31.8 - 34.0,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Gender,United States,Female,17,Oct 14 - Oct 26,42.4,41.6,43.2,41.6 - 43.2,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,Hispanic or Latino,17,Oct 14 - Oct 26,42.2,39.8,44.6,39.8 - 44.6,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic white, single race",17,Oct 14 - Oct 26,36.1,35.3,36.8,35.3 - 36.8,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic black, single race",17,Oct 14 - Oct 26,39.8,37.6,42.1,37.6 - 42.1,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic Asian, single race",17,Oct 14 - Oct 26,34.3,31.4,37.2,31.4 - 37.2,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic, other races and multiple races",17,Oct 14 - Oct 26,48.3,45.1,51.4,45.1 - 51.4,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Education,United States,Less than a high school diploma,17,Oct 14 - Oct 26,42.3,37.3,47.5,37.3 - 47.5,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Education,United States,High school diploma or GED,17,Oct 14 - Oct 26,37.1,35.5,38.9,35.5 - 38.9,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Education,United States,Some college/Associate's degree,17,Oct 14 - Oct 26,41.9,40.6,43.2,40.6 - 43.2,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By Education,United States,Bachelor's degree or higher,17,Oct 14 - Oct 26,33.7,32.9,34.4,32.9 - 34.4,
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Alabama,Alabama,17,Oct 14 - Oct 26,36.0,32.1,40.1,32.1 - 40.1,35.5-37.1
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Alaska,Alaska,17,Oct 14 - Oct 26,38.5,34.4,42.8,34.4 - 42.8,37.2-39.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Arizona,Arizona,17,Oct 14 - Oct 26,39.8,35.3,44.5,35.3 - 44.5,39.7-46.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Arkansas,Arkansas,17,Oct 14 - Oct 26,38.5,34.1,43.0,34.1 - 43.0,37.2-39.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,California,California,17,Oct 14 - Oct 26,39.9,37.4,42.5,37.4 - 42.5,39.7-46.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Colorado,Colorado,17,Oct 14 - Oct 26,37.7,34.5,41.1,34.5 - 41.1,37.2-39.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Connecticut,Connecticut,17,Oct 14 - Oct 26,36.9,33.1,40.8,33.1 - 40.8,35.5-37.1
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Delaware,Delaware,17,Oct 14 - Oct 26,34.3,29.5,39.4,29.5 - 39.4,28.7-35.4
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,District of Columbia,District of Columbia,17,Oct 14 - Oct 26,40.1,34.0,46.4,34.0 - 46.4,39.7-46.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Florida,Florida,17,Oct 14 - Oct 26,35.7,32.4,39.0,32.4 - 39.0,35.5-37.1
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Georgia,Georgia,17,Oct 14 - Oct 26,37.8,34.6,41.1,34.6 - 41.1,37.2-39.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Hawaii,Hawaii,17,Oct 14 - Oct 26,38.8,34.2,43.6,34.2 - 43.6,37.2-39.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Idaho,Idaho,17,Oct 14 - Oct 26,35.9,32.6,39.3,32.6 - 39.3,35.5-37.1
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Illinois,Illinois,17,Oct 14 - Oct 26,34.8,31.9,37.8,31.9 - 37.8,28.7-35.4
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Indiana,Indiana,17,Oct 14 - Oct 26,38.8,35.4,42.3,35.4 - 42.3,37.2-39.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Iowa,Iowa,17,Oct 14 - Oct 26,33.4,30.1,36.9,30.1 - 36.9,28.7-35.4
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Kansas,Kansas,17,Oct 14 - Oct 26,39.6,35.4,43.9,35.4 - 43.9,37.2-39.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Kentucky,Kentucky,17,Oct 14 - Oct 26,41.9,37.1,46.7,37.1 - 46.7,39.7-46.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Louisiana,Louisiana,17,Oct 14 - Oct 26,41.2,36.4,46.3,36.4 - 46.3,39.7-46.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Maine,Maine,17,Oct 14 - Oct 26,35.9,31.1,41.0,31.1 - 41.0,35.5-37.1
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Maryland,Maryland,17,Oct 14 - Oct 26,37.1,33.6,40.7,33.6 - 40.7,35.5-37.1
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Massachusetts,Massachusetts,17,Oct 14 - Oct 26,37.8,34.8,41.0,34.8 - 41.0,37.2-39.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Michigan,Michigan,17,Oct 14 - Oct 26,37.0,32.9,41.3,32.9 - 41.3,35.5-37.1
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Minnesota,Minnesota,17,Oct 14 - Oct 26,30.6,27.7,33.6,27.7 - 33.6,28.7-35.4
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Mississippi,Mississippi,17,Oct 14 - Oct 26,41.5,36.6,46.5,36.6 - 46.5,39.7-46.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Missouri,Missouri,17,Oct 14 - Oct 26,40.8,36.4,45.4,36.4 - 45.4,39.7-46.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Montana,Montana,17,Oct 14 - Oct 26,34.8,30.3,39.5,30.3 - 39.5,28.7-35.4
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Nebraska,Nebraska,17,Oct 14 - Oct 26,33.3,29.9,36.8,29.9 - 36.8,28.7-35.4
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Nevada,Nevada,17,Oct 14 - Oct 26,41.9,37.8,46.0,37.8 - 46.0,39.7-46.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,New Hampshire,New Hampshire,17,Oct 14 - Oct 26,31.0,27.0,35.2,27.0 - 35.2,28.7-35.4
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,New Jersey,New Jersey,17,Oct 14 - Oct 26,35.7,31.7,39.9,31.7 - 39.9,35.5-37.1
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,New Mexico,New Mexico,17,Oct 14 - Oct 26,46.3,41.4,51.2,41.4 - 51.2,39.7-46.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,New York,New York,17,Oct 14 - Oct 26,38.9,35.1,42.8,35.1 - 42.8,37.2-39.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,North Carolina,North Carolina,17,Oct 14 - Oct 26,32.4,28.1,36.9,28.1 - 36.9,28.7-35.4
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,North Dakota,North Dakota,17,Oct 14 - Oct 26,30.9,26.5,35.5,26.5 - 35.5,28.7-35.4
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Ohio,Ohio,17,Oct 14 - Oct 26,37.2,32.8,41.8,32.8 - 41.8,37.2-39.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Oklahoma,Oklahoma,17,Oct 14 - Oct 26,39.3,35.2,43.5,35.2 - 43.5,37.2-39.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Oregon,Oregon,17,Oct 14 - Oct 26,41.4,38.3,44.5,38.3 - 44.5,39.7-46.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Pennsylvania,Pennsylvania,17,Oct 14 - Oct 26,35.4,31.9,39.1,31.9 - 39.1,28.7-35.4
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Rhode Island,Rhode Island,17,Oct 14 - Oct 26,39.1,34.2,44.1,34.2 - 44.1,37.2-39.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,South Carolina,South Carolina,17,Oct 14 - Oct 26,36.5,32.0,41.2,32.0 - 41.2,35.5-37.1
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,South Dakota,South Dakota,17,Oct 14 - Oct 26,28.7,24.3,33.3,24.3 - 33.3,28.7-35.4
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Tennessee,Tennessee,17,Oct 14 - Oct 26,37.8,34.1,41.5,34.1 - 41.5,37.2-39.6
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Texas,Texas,17,Oct 14 - Oct 26,41.4,38.1,44.7,38.1 - 44.7,39.7-46.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Utah,Utah,17,Oct 14 - Oct 26,33.1,30.8,35.4,30.8 - 35.4,28.7-35.4
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Vermont,Vermont,17,Oct 14 - Oct 26,36.1,31.3,41.2,31.3 - 41.2,35.5-37.1
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Virginia,Virginia,17,Oct 14 - Oct 26,35.6,31.8,39.5,31.8 - 39.5,35.5-37.1
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Washington,Washington,17,Oct 14 - Oct 26,41.7,38.6,44.8,38.6 - 44.8,39.7-46.3
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,West Virginia,West Virginia,17,Oct 14 - Oct 26,36.0,31.0,41.3,31.0 - 41.3,35.5-37.1
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Wisconsin,Wisconsin,17,Oct 14 - Oct 26,36.0,32.7,39.5,32.7 - 39.5,35.5-37.1
+2,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Wyoming,Wyoming,17,Oct 14 - Oct 26,32.0,27.5,36.9,27.5 - 36.9,28.7-35.4
+3,Symptoms of Depressive Disorder,National Estimate,United States,United States,18,Oct 28 - Nov 9,27.7,26.7,28.7,26.7 - 28.7,
+3,Symptoms of Depressive Disorder,By Age,United States,18 - 29 years,18,Oct 28 - Nov 9,43.4,40.2,46.6,40.2 - 46.6,
+3,Symptoms of Depressive Disorder,By Age,United States,30 - 39 years,18,Oct 28 - Nov 9,33.5,31.3,35.7,31.3 - 35.7,
+3,Symptoms of Depressive Disorder,By Age,United States,40 - 49 years,18,Oct 28 - Nov 9,27.4,25.5,29.3,25.5 - 29.3,
+3,Symptoms of Depressive Disorder,By Age,United States,50 - 59 years,18,Oct 28 - Nov 9,25.5,23.8,27.4,23.8 - 27.4,
+3,Symptoms of Depressive Disorder,By Age,United States,60 - 69 years,18,Oct 28 - Nov 9,20.5,18.8,22.4,18.8 - 22.4,
+3,Symptoms of Depressive Disorder,By Age,United States,70 - 79 years,18,Oct 28 - Nov 9,16.4,14.5,18.5,14.5 - 18.5,
+3,Symptoms of Depressive Disorder,By Age,United States,80 years and above,18,Oct 28 - Nov 9,12.6,8.8,17.3,8.8 - 17.3,
+3,Symptoms of Depressive Disorder,By Gender,United States,Male,18,Oct 28 - Nov 9,25.4,24.0,26.9,24.0 - 26.9,
+3,Symptoms of Depressive Disorder,By Gender,United States,Female,18,Oct 28 - Nov 9,29.7,28.6,30.9,28.6 - 30.9,
+3,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,Hispanic or Latino,18,Oct 28 - Nov 9,33.5,30.7,36.4,30.7 - 36.4,
+3,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic white, single race",18,Oct 28 - Nov 9,25.4,24.5,26.2,24.5 - 26.2,
+3,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic black, single race",18,Oct 28 - Nov 9,34.0,31.0,37.1,31.0 - 37.1,
+3,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic Asian, single race",18,Oct 28 - Nov 9,21.8,18.7,25.2,18.7 - 25.2,
+3,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic, other races and multiple races",18,Oct 28 - Nov 9,33.4,29.7,37.2,29.7 - 37.2,
+3,Symptoms of Depressive Disorder,By Education,United States,Less than a high school diploma,18,Oct 28 - Nov 9,34.8,29.3,40.5,29.3 - 40.5,
+3,Symptoms of Depressive Disorder,By Education,United States,High school diploma or GED,18,Oct 28 - Nov 9,30.6,28.5,32.8,28.5 - 32.8,
+3,Symptoms of Depressive Disorder,By Education,United States,Some college/Associate's degree,18,Oct 28 - Nov 9,31.3,30.0,32.6,30.0 - 32.6,
+3,Symptoms of Depressive Disorder,By Education,United States,Bachelor's degree or higher,18,Oct 28 - Nov 9,20.2,19.5,21.0,19.5 - 21.0,
+3,Symptoms of Depressive Disorder,By State,Alabama,Alabama,18,Oct 28 - Nov 9,33.8,27.5,40.5,27.5 - 40.5,29.5-34.0
+3,Symptoms of Depressive Disorder,By State,Alaska,Alaska,18,Oct 28 - Nov 9,27.1,22.5,32.1,22.5 - 32.1,24.5-27.6
+3,Symptoms of Depressive Disorder,By State,Arizona,Arizona,18,Oct 28 - Nov 9,27.2,22.5,32.3,22.5 - 32.3,24.5-27.6
+3,Symptoms of Depressive Disorder,By State,Arkansas,Arkansas,18,Oct 28 - Nov 9,28.3,23.4,33.5,23.4 - 33.5,27.7-29.4
+3,Symptoms of Depressive Disorder,By State,California,California,18,Oct 28 - Nov 9,29.7,26.1,33.5,26.1 - 33.5,29.5-34.0
+3,Symptoms of Depressive Disorder,By State,Colorado,Colorado,18,Oct 28 - Nov 9,29.2,25.7,32.8,25.7 - 32.8,27.7-29.4
+3,Symptoms of Depressive Disorder,By State,Connecticut,Connecticut,18,Oct 28 - Nov 9,26.6,21.9,31.8,21.9 - 31.8,24.5-27.6
+3,Symptoms of Depressive Disorder,By State,Delaware,Delaware,18,Oct 28 - Nov 9,28.0,20.4,36.7,20.4 - 36.7,27.7-29.4
+3,Symptoms of Depressive Disorder,By State,District of Columbia,District of Columbia,18,Oct 28 - Nov 9,31.1,25.2,37.6,25.2 - 37.6,29.5-34.0
+3,Symptoms of Depressive Disorder,By State,Florida,Florida,18,Oct 28 - Nov 9,30.1,25.7,34.9,25.7 - 34.9,29.5-34.0
+3,Symptoms of Depressive Disorder,By State,Georgia,Georgia,18,Oct 28 - Nov 9,30.9,25.6,36.6,25.6 - 36.6,29.5-34.0
+3,Symptoms of Depressive Disorder,By State,Hawaii,Hawaii,18,Oct 28 - Nov 9,30.1,23.2,37.8,23.2 - 37.8,29.5-34.0
+3,Symptoms of Depressive Disorder,By State,Idaho,Idaho,18,Oct 28 - Nov 9,28.1,23.7,32.9,23.7 - 32.9,27.7-29.4
+3,Symptoms of Depressive Disorder,By State,Illinois,Illinois,18,Oct 28 - Nov 9,28.5,24.7,32.6,24.7 - 32.6,27.7-29.4
+3,Symptoms of Depressive Disorder,By State,Indiana,Indiana,18,Oct 28 - Nov 9,29.4,25.1,34.0,25.1 - 34.0,27.7-29.4
+3,Symptoms of Depressive Disorder,By State,Iowa,Iowa,18,Oct 28 - Nov 9,29.4,24.2,35.1,24.2 - 35.1,27.7-29.4
+3,Symptoms of Depressive Disorder,By State,Kansas,Kansas,18,Oct 28 - Nov 9,30.9,26.3,35.9,26.3 - 35.9,29.5-34.0
+3,Symptoms of Depressive Disorder,By State,Kentucky,Kentucky,18,Oct 28 - Nov 9,27.1,22.1,32.6,22.1 - 32.6,24.5-27.6
+3,Symptoms of Depressive Disorder,By State,Louisiana,Louisiana,18,Oct 28 - Nov 9,30.3,25.2,35.7,25.2 - 35.7,29.5-34.0
+3,Symptoms of Depressive Disorder,By State,Maine,Maine,18,Oct 28 - Nov 9,27.8,23.5,32.5,23.5 - 32.5,27.7-29.4
+3,Symptoms of Depressive Disorder,By State,Maryland,Maryland,18,Oct 28 - Nov 9,24.7,21.3,28.3,21.3 - 28.3,24.5-27.6
+3,Symptoms of Depressive Disorder,By State,Massachusetts,Massachusetts,18,Oct 28 - Nov 9,28.2,24.2,32.4,24.2 - 32.4,27.7-29.4
+3,Symptoms of Depressive Disorder,By State,Michigan,Michigan,18,Oct 28 - Nov 9,22.2,18.8,26.0,18.8 - 26.0,17.0-24.4
+3,Symptoms of Depressive Disorder,By State,Minnesota,Minnesota,18,Oct 28 - Nov 9,23.8,20.7,27.3,20.7 - 27.3,17.0-24.4
+3,Symptoms of Depressive Disorder,By State,Mississippi,Mississippi,18,Oct 28 - Nov 9,28.8,22.0,36.3,22.0 - 36.3,27.7-29.4
+3,Symptoms of Depressive Disorder,By State,Missouri,Missouri,18,Oct 28 - Nov 9,27.5,22.2,33.2,22.2 - 33.2,24.5-27.6
+3,Symptoms of Depressive Disorder,By State,Montana,Montana,18,Oct 28 - Nov 9,22.9,18.5,27.8,18.5 - 27.8,17.0-24.4
+3,Symptoms of Depressive Disorder,By State,Nebraska,Nebraska,18,Oct 28 - Nov 9,23.8,19.7,28.3,19.7 - 28.3,17.0-24.4
+3,Symptoms of Depressive Disorder,By State,Nevada,Nevada,18,Oct 28 - Nov 9,34.0,28.1,40.3,28.1 - 40.3,29.5-34.0
+3,Symptoms of Depressive Disorder,By State,New Hampshire,New Hampshire,18,Oct 28 - Nov 9,21.5,17.9,25.4,17.9 - 25.4,17.0-24.4
+3,Symptoms of Depressive Disorder,By State,New Jersey,New Jersey,18,Oct 28 - Nov 9,23.2,19.2,27.6,19.2 - 27.6,17.0-24.4
+3,Symptoms of Depressive Disorder,By State,New Mexico,New Mexico,18,Oct 28 - Nov 9,32.6,26.3,39.4,26.3 - 39.4,29.5-34.0
+3,Symptoms of Depressive Disorder,By State,New York,New York,18,Oct 28 - Nov 9,22.0,19.0,25.2,19.0 - 25.2,17.0-24.4
+3,Symptoms of Depressive Disorder,By State,North Carolina,North Carolina,18,Oct 28 - Nov 9,27.6,21.8,34.1,21.8 - 34.1,24.5-27.6
+3,Symptoms of Depressive Disorder,By State,North Dakota,North Dakota,18,Oct 28 - Nov 9,17.0,13.1,21.4,13.1 - 21.4,17.0-24.4
+3,Symptoms of Depressive Disorder,By State,Ohio,Ohio,18,Oct 28 - Nov 9,26.7,22.2,31.4,22.2 - 31.4,24.5-27.6
+3,Symptoms of Depressive Disorder,By State,Oklahoma,Oklahoma,18,Oct 28 - Nov 9,27.1,22.9,31.7,22.9 - 31.7,24.5-27.6
+3,Symptoms of Depressive Disorder,By State,Oregon,Oregon,18,Oct 28 - Nov 9,29.0,25.3,32.9,25.3 - 32.9,27.7-29.4
+3,Symptoms of Depressive Disorder,By State,Pennsylvania,Pennsylvania,18,Oct 28 - Nov 9,27.8,23.8,32.1,23.8 - 32.1,27.7-29.4
+3,Symptoms of Depressive Disorder,By State,Rhode Island,Rhode Island,18,Oct 28 - Nov 9,25.6,19.9,31.9,19.9 - 31.9,24.5-27.6
+3,Symptoms of Depressive Disorder,By State,South Carolina,South Carolina,18,Oct 28 - Nov 9,28.2,22.6,34.4,22.6 - 34.4,27.7-29.4
+3,Symptoms of Depressive Disorder,By State,South Dakota,South Dakota,18,Oct 28 - Nov 9,20.0,15.9,24.5,15.9 - 24.5,17.0-24.4
+3,Symptoms of Depressive Disorder,By State,Tennessee,Tennessee,18,Oct 28 - Nov 9,25.0,21.0,29.4,21.0 - 29.4,24.5-27.6
+3,Symptoms of Depressive Disorder,By State,Texas,Texas,18,Oct 28 - Nov 9,31.2,27.1,35.6,27.1 - 35.6,29.5-34.0
+3,Symptoms of Depressive Disorder,By State,Utah,Utah,18,Oct 28 - Nov 9,24.3,20.7,28.2,20.7 - 28.2,17.0-24.4
+3,Symptoms of Depressive Disorder,By State,Vermont,Vermont,18,Oct 28 - Nov 9,30.0,23.6,37.1,23.6 - 37.1,29.5-34.0
+3,Symptoms of Depressive Disorder,By State,Virginia,Virginia,18,Oct 28 - Nov 9,24.0,20.5,27.7,20.5 - 27.7,17.0-24.4
+3,Symptoms of Depressive Disorder,By State,Washington,Washington,18,Oct 28 - Nov 9,24.4,21.3,27.6,21.3 - 27.6,17.0-24.4
+3,Symptoms of Depressive Disorder,By State,West Virginia,West Virginia,18,Oct 28 - Nov 9,25.7,20.6,31.2,20.6 - 31.2,24.5-27.6
+3,Symptoms of Depressive Disorder,By State,Wisconsin,Wisconsin,18,Oct 28 - Nov 9,27.0,22.5,31.8,22.5 - 31.8,24.5-27.6
+3,Symptoms of Depressive Disorder,By State,Wyoming,Wyoming,18,Oct 28 - Nov 9,23.5,17.9,30.0,17.9 - 30.0,17.0-24.4
+3,Symptoms of Anxiety Disorder,National Estimate,United States,United States,18,Oct 28 - Nov 9,36.3,35.6,37.1,35.6 - 37.1,
+3,Symptoms of Anxiety Disorder,By Age,United States,18 - 29 years,18,Oct 28 - Nov 9,51.7,48.8,54.6,48.8 - 54.6,
+3,Symptoms of Anxiety Disorder,By Age,United States,30 - 39 years,18,Oct 28 - Nov 9,43.1,41.0,45.3,41.0 - 45.3,
+3,Symptoms of Anxiety Disorder,By Age,United States,40 - 49 years,18,Oct 28 - Nov 9,38.9,37.2,40.7,37.2 - 40.7,
+3,Symptoms of Anxiety Disorder,By Age,United States,50 - 59 years,18,Oct 28 - Nov 9,34.1,32.1,36.2,32.1 - 36.2,
+3,Symptoms of Anxiety Disorder,By Age,United States,60 - 69 years,18,Oct 28 - Nov 9,28.7,26.9,30.4,26.9 - 30.4,
+3,Symptoms of Anxiety Disorder,By Age,United States,70 - 79 years,18,Oct 28 - Nov 9,21.3,19.5,23.3,19.5 - 23.3,
+3,Symptoms of Anxiety Disorder,By Age,United States,80 years and above,18,Oct 28 - Nov 9,15.4,11.7,19.7,11.7 - 19.7,
+3,Symptoms of Anxiety Disorder,By Gender,United States,Male,18,Oct 28 - Nov 9,30.3,29.1,31.7,29.1 - 31.7,
+3,Symptoms of Anxiety Disorder,By Gender,United States,Female,18,Oct 28 - Nov 9,41.8,40.6,43.0,40.6 - 43.0,
+3,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,Hispanic or Latino,18,Oct 28 - Nov 9,41.8,38.8,44.8,38.8 - 44.8,
+3,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic white, single race",18,Oct 28 - Nov 9,35.0,34.2,35.7,34.2 - 35.7,
+3,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic black, single race",18,Oct 28 - Nov 9,38.3,35.2,41.5,35.2 - 41.5,
+3,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic Asian, single race",18,Oct 28 - Nov 9,27.7,24.5,31.1,24.5 - 31.1,
+3,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic, other races and multiple races",18,Oct 28 - Nov 9,42.5,38.3,46.8,38.3 - 46.8,
+3,Symptoms of Anxiety Disorder,By Education,United States,Less than a high school diploma,18,Oct 28 - Nov 9,36.2,30.9,41.7,30.9 - 41.7,
+3,Symptoms of Anxiety Disorder,By Education,United States,High school diploma or GED,18,Oct 28 - Nov 9,35.3,33.6,37.0,33.6 - 37.0,
+3,Symptoms of Anxiety Disorder,By Education,United States,Some college/Associate's degree,18,Oct 28 - Nov 9,39.3,37.9,40.7,37.9 - 40.7,
+3,Symptoms of Anxiety Disorder,By Education,United States,Bachelor's degree or higher,18,Oct 28 - Nov 9,34.5,33.6,35.5,33.6 - 35.5,
+3,Symptoms of Anxiety Disorder,By State,Alabama,Alabama,18,Oct 28 - Nov 9,35.3,29.8,41.1,29.8 - 41.1,34.8-36.6
+3,Symptoms of Anxiety Disorder,By State,Alaska,Alaska,18,Oct 28 - Nov 9,32.7,28.7,36.9,28.7 - 36.9,22.3-34.7
+3,Symptoms of Anxiety Disorder,By State,Arizona,Arizona,18,Oct 28 - Nov 9,35.5,30.4,40.9,30.4 - 40.9,34.8-36.6
+3,Symptoms of Anxiety Disorder,By State,Arkansas,Arkansas,18,Oct 28 - Nov 9,38.8,33.8,43.8,33.8 - 43.8,38.4-45.6
+3,Symptoms of Anxiety Disorder,By State,California,California,18,Oct 28 - Nov 9,38.2,35.0,41.5,35.0 - 41.5,36.7-38.3
+3,Symptoms of Anxiety Disorder,By State,Colorado,Colorado,18,Oct 28 - Nov 9,40.5,36.8,44.2,36.8 - 44.2,38.4-45.6
+3,Symptoms of Anxiety Disorder,By State,Connecticut,Connecticut,18,Oct 28 - Nov 9,38.2,33.7,42.9,33.7 - 42.9,36.7-38.3
+3,Symptoms of Anxiety Disorder,By State,Delaware,Delaware,18,Oct 28 - Nov 9,37.7,30.5,45.4,30.5 - 45.4,36.7-38.3
+3,Symptoms of Anxiety Disorder,By State,District of Columbia,District of Columbia,18,Oct 28 - Nov 9,45.6,38.9,52.4,38.9 - 52.4,38.4-45.6
+3,Symptoms of Anxiety Disorder,By State,Florida,Florida,18,Oct 28 - Nov 9,38.3,33.8,43.0,33.8 - 43.0,36.7-38.3
+3,Symptoms of Anxiety Disorder,By State,Georgia,Georgia,18,Oct 28 - Nov 9,39.0,33.9,44.2,33.9 - 44.2,38.4-45.6
+3,Symptoms of Anxiety Disorder,By State,Hawaii,Hawaii,18,Oct 28 - Nov 9,37.0,30.3,44.1,30.3 - 44.1,36.7-38.3
+3,Symptoms of Anxiety Disorder,By State,Idaho,Idaho,18,Oct 28 - Nov 9,35.3,30.8,40.0,30.8 - 40.0,34.8-36.6
+3,Symptoms of Anxiety Disorder,By State,Illinois,Illinois,18,Oct 28 - Nov 9,36.2,31.5,41.1,31.5 - 41.1,34.8-36.6
+3,Symptoms of Anxiety Disorder,By State,Indiana,Indiana,18,Oct 28 - Nov 9,35.0,31.0,39.1,31.0 - 39.1,34.8-36.6
+3,Symptoms of Anxiety Disorder,By State,Iowa,Iowa,18,Oct 28 - Nov 9,41.0,35.6,46.6,35.6 - 46.6,38.4-45.6
+3,Symptoms of Anxiety Disorder,By State,Kansas,Kansas,18,Oct 28 - Nov 9,40.4,36.2,44.7,36.2 - 44.7,38.4-45.6
+3,Symptoms of Anxiety Disorder,By State,Kentucky,Kentucky,18,Oct 28 - Nov 9,37.6,31.4,44.0,31.4 - 44.0,36.7-38.3
+3,Symptoms of Anxiety Disorder,By State,Louisiana,Louisiana,18,Oct 28 - Nov 9,37.6,32.2,43.2,32.2 - 43.2,36.7-38.3
+3,Symptoms of Anxiety Disorder,By State,Maine,Maine,18,Oct 28 - Nov 9,40.5,35.2,46.0,35.2 - 46.0,38.4-45.6
+3,Symptoms of Anxiety Disorder,By State,Maryland,Maryland,18,Oct 28 - Nov 9,35.7,30.9,40.7,30.9 - 40.7,34.8-36.6
+3,Symptoms of Anxiety Disorder,By State,Massachusetts,Massachusetts,18,Oct 28 - Nov 9,37.6,33.4,42.0,33.4 - 42.0,36.7-38.3
+3,Symptoms of Anxiety Disorder,By State,Michigan,Michigan,18,Oct 28 - Nov 9,31.1,27.2,35.1,27.2 - 35.1,22.3-34.7
+3,Symptoms of Anxiety Disorder,By State,Minnesota,Minnesota,18,Oct 28 - Nov 9,33.6,30.5,36.9,30.5 - 36.9,22.3-34.7
+3,Symptoms of Anxiety Disorder,By State,Mississippi,Mississippi,18,Oct 28 - Nov 9,37.8,31.8,44.1,31.8 - 44.1,36.7-38.3
+3,Symptoms of Anxiety Disorder,By State,Missouri,Missouri,18,Oct 28 - Nov 9,35.5,29.5,41.9,29.5 - 41.9,34.8-36.6
+3,Symptoms of Anxiety Disorder,By State,Montana,Montana,18,Oct 28 - Nov 9,36.6,31.0,42.5,31.0 - 42.5,34.8-36.6
+3,Symptoms of Anxiety Disorder,By State,Nebraska,Nebraska,18,Oct 28 - Nov 9,33.0,28.0,38.2,28.0 - 38.2,22.3-34.7
+3,Symptoms of Anxiety Disorder,By State,Nevada,Nevada,18,Oct 28 - Nov 9,39.9,34.2,45.8,34.2 - 45.8,38.4-45.6
+3,Symptoms of Anxiety Disorder,By State,New Hampshire,New Hampshire,18,Oct 28 - Nov 9,36.0,31.3,41.0,31.3 - 41.0,34.8-36.6
+3,Symptoms of Anxiety Disorder,By State,New Jersey,New Jersey,18,Oct 28 - Nov 9,33.5,28.4,38.9,28.4 - 38.9,22.3-34.7
+3,Symptoms of Anxiety Disorder,By State,New Mexico,New Mexico,18,Oct 28 - Nov 9,40.1,34.1,46.4,34.1 - 46.4,38.4-45.6
+3,Symptoms of Anxiety Disorder,By State,New York,New York,18,Oct 28 - Nov 9,33.0,29.1,37.0,29.1 - 37.0,22.3-34.7
+3,Symptoms of Anxiety Disorder,By State,North Carolina,North Carolina,18,Oct 28 - Nov 9,36.0,30.7,41.5,30.7 - 41.5,34.8-36.6
+3,Symptoms of Anxiety Disorder,By State,North Dakota,North Dakota,18,Oct 28 - Nov 9,22.3,17.0,28.4,17.0 - 28.4,22.3-34.7
+3,Symptoms of Anxiety Disorder,By State,Ohio,Ohio,18,Oct 28 - Nov 9,37.1,33.7,40.7,33.7 - 40.7,36.7-38.3
+3,Symptoms of Anxiety Disorder,By State,Oklahoma,Oklahoma,18,Oct 28 - Nov 9,40.0,35.0,45.1,35.0 - 45.1,38.4-45.6
+3,Symptoms of Anxiety Disorder,By State,Oregon,Oregon,18,Oct 28 - Nov 9,38.4,34.9,42.0,34.9 - 42.0,38.4-45.6
+3,Symptoms of Anxiety Disorder,By State,Pennsylvania,Pennsylvania,18,Oct 28 - Nov 9,36.1,31.8,40.7,31.8 - 40.7,34.8-36.6
+3,Symptoms of Anxiety Disorder,By State,Rhode Island,Rhode Island,18,Oct 28 - Nov 9,38.6,31.7,45.8,31.7 - 45.8,38.4-45.6
+3,Symptoms of Anxiety Disorder,By State,South Carolina,South Carolina,18,Oct 28 - Nov 9,37.3,31.3,43.6,31.3 - 43.6,36.7-38.3
+3,Symptoms of Anxiety Disorder,By State,South Dakota,South Dakota,18,Oct 28 - Nov 9,28.6,24.2,33.3,24.2 - 33.3,22.3-34.7
+3,Symptoms of Anxiety Disorder,By State,Tennessee,Tennessee,18,Oct 28 - Nov 9,32.5,28.4,36.8,28.4 - 36.8,22.3-34.7
+3,Symptoms of Anxiety Disorder,By State,Texas,Texas,18,Oct 28 - Nov 9,37.2,33.1,41.4,33.1 - 41.4,36.7-38.3
+3,Symptoms of Anxiety Disorder,By State,Utah,Utah,18,Oct 28 - Nov 9,33.0,29.3,36.8,29.3 - 36.8,22.3-34.7
+3,Symptoms of Anxiety Disorder,By State,Vermont,Vermont,18,Oct 28 - Nov 9,37.3,31.6,43.3,31.6 - 43.3,36.7-38.3
+3,Symptoms of Anxiety Disorder,By State,Virginia,Virginia,18,Oct 28 - Nov 9,30.5,26.6,34.5,26.6 - 34.5,22.3-34.7
+3,Symptoms of Anxiety Disorder,By State,Washington,Washington,18,Oct 28 - Nov 9,34.7,31.5,38.1,31.5 - 38.1,22.3-34.7
+3,Symptoms of Anxiety Disorder,By State,West Virginia,West Virginia,18,Oct 28 - Nov 9,35.7,29.2,42.7,29.2 - 42.7,34.8-36.6
+3,Symptoms of Anxiety Disorder,By State,Wisconsin,Wisconsin,18,Oct 28 - Nov 9,36.0,31.0,41.2,31.0 - 41.2,34.8-36.6
+3,Symptoms of Anxiety Disorder,By State,Wyoming,Wyoming,18,Oct 28 - Nov 9,30.0,24.3,36.1,24.3 - 36.1,22.3-34.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,National Estimate,United States,United States,18,Oct 28 - Nov 9,41.4,40.6,42.2,40.6 - 42.2,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,18 - 29 years,18,Oct 28 - Nov 9,58.7,55.8,61.5,55.8 - 61.5,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,30 - 39 years,18,Oct 28 - Nov 9,49.5,47.1,51.9,47.1 - 51.9,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,40 - 49 years,18,Oct 28 - Nov 9,42.6,40.9,44.4,40.9 - 44.4,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,50 - 59 years,18,Oct 28 - Nov 9,38.6,36.5,40.7,36.5 - 40.7,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,60 - 69 years,18,Oct 28 - Nov 9,32.9,31.0,34.8,31.0 - 34.8,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,70 - 79 years,18,Oct 28 - Nov 9,26.6,24.3,29.0,24.3 - 29.0,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,80 years and above,18,Oct 28 - Nov 9,18.4,14.6,22.7,14.6 - 22.7,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Gender,United States,Male,18,Oct 28 - Nov 9,36.1,34.6,37.5,34.6 - 37.5,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Gender,United States,Female,18,Oct 28 - Nov 9,46.2,44.9,47.5,44.9 - 47.5,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,Hispanic or Latino,18,Oct 28 - Nov 9,48.0,45.4,50.7,45.4 - 50.7,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic white, single race",18,Oct 28 - Nov 9,39.4,38.6,40.2,38.6 - 40.2,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic black, single race",18,Oct 28 - Nov 9,45.0,41.9,48.2,41.9 - 48.2,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic Asian, single race",18,Oct 28 - Nov 9,32.9,29.0,37.1,29.0 - 37.1,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic, other races and multiple races",18,Oct 28 - Nov 9,48.5,44.3,52.8,44.3 - 52.8,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Education,United States,Less than a high school diploma,18,Oct 28 - Nov 9,43.7,37.9,49.5,37.9 - 49.5,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Education,United States,High school diploma or GED,18,Oct 28 - Nov 9,42.0,40.2,43.8,40.2 - 43.8,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Education,United States,Some college/Associate's degree,18,Oct 28 - Nov 9,44.6,43.3,45.9,43.3 - 45.9,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Education,United States,Bachelor's degree or higher,18,Oct 28 - Nov 9,37.3,36.4,38.3,36.4 - 38.3,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Alabama,Alabama,18,Oct 28 - Nov 9,44.8,38.6,51.2,38.6 - 51.2,43.7-50.1
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Alaska,Alaska,18,Oct 28 - Nov 9,38.2,33.8,42.8,33.8 - 42.8,25.5-38.8
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Arizona,Arizona,18,Oct 28 - Nov 9,40.3,35.2,45.6,35.2 - 45.6,38.9-41.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Arkansas,Arkansas,18,Oct 28 - Nov 9,41.6,36.3,47.0,36.3 - 47.0,38.9-41.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,California,California,18,Oct 28 - Nov 9,43.7,40.1,47.4,40.1 - 47.4,43.7-50.1
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Colorado,Colorado,18,Oct 28 - Nov 9,43.3,39.7,47.0,39.7 - 47.0,41.7-43.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Connecticut,Connecticut,18,Oct 28 - Nov 9,41.8,37.3,46.5,37.3 - 46.5,41.7-43.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Delaware,Delaware,18,Oct 28 - Nov 9,41.5,34.2,49.1,34.2 - 49.1,38.9-41.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,District of Columbia,District of Columbia,18,Oct 28 - Nov 9,50.1,43.2,56.9,43.2 - 56.9,43.7-50.1
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Florida,Florida,18,Oct 28 - Nov 9,43.6,39.5,47.7,39.5 - 47.7,41.7-43.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Georgia,Georgia,18,Oct 28 - Nov 9,46.4,41.0,51.9,41.0 - 51.9,43.7-50.1
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Hawaii,Hawaii,18,Oct 28 - Nov 9,43.4,36.5,50.4,36.5 - 50.4,41.7-43.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Idaho,Idaho,18,Oct 28 - Nov 9,42.2,37.1,47.4,37.1 - 47.4,41.7-43.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Illinois,Illinois,18,Oct 28 - Nov 9,41.8,37.1,46.6,37.1 - 46.6,41.7-43.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Indiana,Indiana,18,Oct 28 - Nov 9,40.9,36.3,45.5,36.3 - 45.5,38.9-41.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Iowa,Iowa,18,Oct 28 - Nov 9,44.3,38.7,50.1,38.7 - 50.1,43.7-50.1
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Kansas,Kansas,18,Oct 28 - Nov 9,43.6,39.1,48.1,39.1 - 48.1,41.7-43.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Kentucky,Kentucky,18,Oct 28 - Nov 9,40.8,34.7,47.3,34.7 - 47.3,38.9-41.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Louisiana,Louisiana,18,Oct 28 - Nov 9,42.3,36.4,48.3,36.4 - 48.3,41.7-43.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Maine,Maine,18,Oct 28 - Nov 9,43.8,38.8,48.9,38.8 - 48.9,43.7-50.1
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Maryland,Maryland,18,Oct 28 - Nov 9,39.7,34.9,44.7,34.9 - 44.7,38.9-41.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Massachusetts,Massachusetts,18,Oct 28 - Nov 9,42.8,38.5,47.1,38.5 - 47.1,41.7-43.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Michigan,Michigan,18,Oct 28 - Nov 9,34.8,30.9,38.8,30.9 - 38.8,25.5-38.8
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Minnesota,Minnesota,18,Oct 28 - Nov 9,37.1,33.8,40.4,33.8 - 40.4,25.5-38.8
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Mississippi,Mississippi,18,Oct 28 - Nov 9,42.7,36.9,48.7,36.9 - 48.7,41.7-43.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Missouri,Missouri,18,Oct 28 - Nov 9,40.3,34.0,46.8,34.0 - 46.8,38.9-41.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Montana,Montana,18,Oct 28 - Nov 9,39.4,33.9,45.1,33.9 - 45.1,38.9-41.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Nebraska,Nebraska,18,Oct 28 - Nov 9,38.1,33.1,43.4,33.1 - 43.4,25.5-38.8
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Nevada,Nevada,18,Oct 28 - Nov 9,47.3,41.6,53.1,41.6 - 53.1,43.7-50.1
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,New Hampshire,New Hampshire,18,Oct 28 - Nov 9,39.2,34.4,44.1,34.4 - 44.1,38.9-41.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,New Jersey,New Jersey,18,Oct 28 - Nov 9,36.9,31.9,42.2,31.9 - 42.2,25.5-38.8
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,New Mexico,New Mexico,18,Oct 28 - Nov 9,44.2,38.1,50.5,38.1 - 50.5,43.7-50.1
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,New York,New York,18,Oct 28 - Nov 9,36.5,32.5,40.6,32.5 - 40.6,25.5-38.8
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,North Carolina,North Carolina,18,Oct 28 - Nov 9,42.3,36.3,48.4,36.3 - 48.4,41.7-43.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,North Dakota,North Dakota,18,Oct 28 - Nov 9,25.5,19.8,31.9,19.8 - 31.9,25.5-38.8
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Ohio,Ohio,18,Oct 28 - Nov 9,42.0,37.7,46.4,37.7 - 46.4,41.7-43.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Oklahoma,Oklahoma,18,Oct 28 - Nov 9,43.3,38.3,48.5,38.3 - 48.5,41.7-43.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Oregon,Oregon,18,Oct 28 - Nov 9,44.1,40.3,47.9,40.3 - 47.9,43.7-50.1
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Pennsylvania,Pennsylvania,18,Oct 28 - Nov 9,41.3,36.9,45.8,36.9 - 45.8,38.9-41.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Rhode Island,Rhode Island,18,Oct 28 - Nov 9,42.3,35.6,49.1,35.6 - 49.1,41.7-43.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,South Carolina,South Carolina,18,Oct 28 - Nov 9,41.4,35.3,47.8,35.3 - 47.8,38.9-41.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,South Dakota,South Dakota,18,Oct 28 - Nov 9,32.3,27.4,37.6,27.4 - 37.6,25.5-38.8
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Tennessee,Tennessee,18,Oct 28 - Nov 9,36.7,32.3,41.3,32.3 - 41.3,25.5-38.8
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Texas,Texas,18,Oct 28 - Nov 9,44.4,40.1,48.7,40.1 - 48.7,43.7-50.1
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Utah,Utah,18,Oct 28 - Nov 9,36.4,32.6,40.4,32.6 - 40.4,25.5-38.8
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Vermont,Vermont,18,Oct 28 - Nov 9,43.8,37.7,49.9,37.7 - 49.9,43.7-50.1
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Virginia,Virginia,18,Oct 28 - Nov 9,36.7,32.7,40.9,32.7 - 40.9,25.5-38.8
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Washington,Washington,18,Oct 28 - Nov 9,38.8,35.3,42.3,35.3 - 42.3,25.5-38.8
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,West Virginia,West Virginia,18,Oct 28 - Nov 9,39.3,32.4,46.5,32.4 - 46.5,38.9-41.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Wisconsin,Wisconsin,18,Oct 28 - Nov 9,39.2,34.2,44.4,34.2 - 44.4,38.9-41.6
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Wyoming,Wyoming,18,Oct 28 - Nov 9,37.0,30.8,43.5,30.8 - 43.5,25.5-38.8
+3,Symptoms of Depressive Disorder,National Estimate,United States,United States,19,Nov 11 - Nov 23,28.6,27.9,29.3,27.9 - 29.3,
+3,Symptoms of Depressive Disorder,By Age,United States,18 - 29 years,19,Nov 11 - Nov 23,43.4,40.9,45.9,40.9 - 45.9,
+3,Symptoms of Depressive Disorder,By Age,United States,30 - 39 years,19,Nov 11 - Nov 23,32.2,30.5,33.9,30.5 - 33.9,
+3,Symptoms of Depressive Disorder,By Age,United States,40 - 49 years,19,Nov 11 - Nov 23,29.9,28.4,31.4,28.4 - 31.4,
+3,Symptoms of Depressive Disorder,By Age,United States,50 - 59 years,19,Nov 11 - Nov 23,26.7,25.1,28.4,25.1 - 28.4,
+3,Symptoms of Depressive Disorder,By Age,United States,60 - 69 years,19,Nov 11 - Nov 23,21.5,20.0,23.1,20.0 - 23.1,
+3,Symptoms of Depressive Disorder,By Age,United States,70 - 79 years,19,Nov 11 - Nov 23,17.2,15.2,19.2,15.2 - 19.2,
+3,Symptoms of Depressive Disorder,By Age,United States,80 years and above,19,Nov 11 - Nov 23,18.2,13.7,23.5,13.7 - 23.5,
+3,Symptoms of Depressive Disorder,By Gender,United States,Male,19,Nov 11 - Nov 23,25.7,24.7,26.7,24.7 - 26.7,
+3,Symptoms of Depressive Disorder,By Gender,United States,Female,19,Nov 11 - Nov 23,31.3,30.3,32.3,30.3 - 32.3,
+3,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,Hispanic or Latino,19,Nov 11 - Nov 23,32.5,30.2,34.8,30.2 - 34.8,
+3,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic white, single race",19,Nov 11 - Nov 23,27.0,26.2,27.8,26.2 - 27.8,
+3,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic black, single race",19,Nov 11 - Nov 23,31.4,28.9,34.1,28.9 - 34.1,
+3,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic Asian, single race",19,Nov 11 - Nov 23,23.2,20.4,26.2,20.4 - 26.2,
+3,Symptoms of Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic, other races and multiple races",19,Nov 11 - Nov 23,38.5,34.6,42.5,34.6 - 42.5,
+3,Symptoms of Depressive Disorder,By Education,United States,Less than a high school diploma,19,Nov 11 - Nov 23,37.7,32.8,42.9,32.8 - 42.9,
+3,Symptoms of Depressive Disorder,By Education,United States,High school diploma or GED,19,Nov 11 - Nov 23,30.3,28.7,32.0,28.7 - 32.0,
+3,Symptoms of Depressive Disorder,By Education,United States,Some college/Associate's degree,19,Nov 11 - Nov 23,32.0,30.7,33.3,30.7 - 33.3,
+3,Symptoms of Depressive Disorder,By Education,United States,Bachelor's degree or higher,19,Nov 11 - Nov 23,22.0,21.2,22.8,21.2 - 22.8,
+3,Symptoms of Depressive Disorder,By State,Alabama,Alabama,19,Nov 11 - Nov 23,31.5,26.6,36.7,26.6 - 36.7,30.2-35.5
+3,Symptoms of Depressive Disorder,By State,Alaska,Alaska,19,Nov 11 - Nov 23,30.0,26.9,33.4,26.9 - 33.4,27.6-30.1
+3,Symptoms of Depressive Disorder,By State,Arizona,Arizona,19,Nov 11 - Nov 23,28.7,24.6,33.0,24.6 - 33.0,27.6-30.1
+3,Symptoms of Depressive Disorder,By State,Arkansas,Arkansas,19,Nov 11 - Nov 23,32.7,27.7,38.0,27.7 - 38.0,30.2-35.5
+3,Symptoms of Depressive Disorder,By State,California,California,19,Nov 11 - Nov 23,30.7,27.7,33.8,27.7 - 33.8,30.2-35.5
+3,Symptoms of Depressive Disorder,By State,Colorado,Colorado,19,Nov 11 - Nov 23,26.0,23.5,28.8,23.5 - 28.8,21.6-26.2
+3,Symptoms of Depressive Disorder,By State,Connecticut,Connecticut,19,Nov 11 - Nov 23,25.3,21.2,29.7,21.2 - 29.7,21.6-26.2
+3,Symptoms of Depressive Disorder,By State,Delaware,Delaware,19,Nov 11 - Nov 23,24.3,19.6,29.6,19.6 - 29.6,21.6-26.2
+3,Symptoms of Depressive Disorder,By State,District of Columbia,District of Columbia,19,Nov 11 - Nov 23,27.8,21.1,35.2,21.1 - 35.2,27.6-30.1
+3,Symptoms of Depressive Disorder,By State,Florida,Florida,19,Nov 11 - Nov 23,30.5,26.1,35.1,26.1 - 35.1,30.2-35.5
+3,Symptoms of Depressive Disorder,By State,Georgia,Georgia,19,Nov 11 - Nov 23,29.2,25.1,33.5,25.1 - 33.5,27.6-30.1
+3,Symptoms of Depressive Disorder,By State,Hawaii,Hawaii,19,Nov 11 - Nov 23,22.6,17.9,28.0,17.9 - 28.0,21.6-26.2
+3,Symptoms of Depressive Disorder,By State,Idaho,Idaho,19,Nov 11 - Nov 23,27.2,22.7,32.1,22.7 - 32.1,26.3-27.5
+3,Symptoms of Depressive Disorder,By State,Illinois,Illinois,19,Nov 11 - Nov 23,30.4,27.0,33.9,27.0 - 33.9,30.2-35.5
+3,Symptoms of Depressive Disorder,By State,Indiana,Indiana,19,Nov 11 - Nov 23,27.0,23.2,31.1,23.2 - 31.1,26.3-27.5
+3,Symptoms of Depressive Disorder,By State,Iowa,Iowa,19,Nov 11 - Nov 23,25.5,21.8,29.5,21.8 - 29.5,21.6-26.2
+3,Symptoms of Depressive Disorder,By State,Kansas,Kansas,19,Nov 11 - Nov 23,26.5,22.4,30.9,22.4 - 30.9,26.3-27.5
+3,Symptoms of Depressive Disorder,By State,Kentucky,Kentucky,19,Nov 11 - Nov 23,26.5,22.5,30.8,22.5 - 30.8,26.3-27.5
+3,Symptoms of Depressive Disorder,By State,Louisiana,Louisiana,19,Nov 11 - Nov 23,35.5,29.1,42.3,29.1 - 42.3,30.2-35.5
+3,Symptoms of Depressive Disorder,By State,Maine,Maine,19,Nov 11 - Nov 23,25.8,20.6,31.6,20.6 - 31.6,21.6-26.2
+3,Symptoms of Depressive Disorder,By State,Maryland,Maryland,19,Nov 11 - Nov 23,26.7,23.3,30.2,23.3 - 30.2,26.3-27.5
+3,Symptoms of Depressive Disorder,By State,Massachusetts,Massachusetts,19,Nov 11 - Nov 23,27.5,24.1,31.2,24.1 - 31.2,26.3-27.5
+3,Symptoms of Depressive Disorder,By State,Michigan,Michigan,19,Nov 11 - Nov 23,26.8,23.6,30.1,23.6 - 30.1,26.3-27.5
+3,Symptoms of Depressive Disorder,By State,Minnesota,Minnesota,19,Nov 11 - Nov 23,24.5,21.0,28.4,21.0 - 28.4,21.6-26.2
+3,Symptoms of Depressive Disorder,By State,Mississippi,Mississippi,19,Nov 11 - Nov 23,30.1,24.3,36.3,24.3 - 36.3,27.6-30.1
+3,Symptoms of Depressive Disorder,By State,Missouri,Missouri,19,Nov 11 - Nov 23,26.6,20.9,32.8,20.9 - 32.8,26.3-27.5
+3,Symptoms of Depressive Disorder,By State,Montana,Montana,19,Nov 11 - Nov 23,30.1,25.1,35.4,25.1 - 35.4,27.6-30.1
+3,Symptoms of Depressive Disorder,By State,Nebraska,Nebraska,19,Nov 11 - Nov 23,26.5,22.5,30.9,22.5 - 30.9,26.3-27.5
+3,Symptoms of Depressive Disorder,By State,Nevada,Nevada,19,Nov 11 - Nov 23,32.5,27.6,37.8,27.6 - 37.8,30.2-35.5
+3,Symptoms of Depressive Disorder,By State,New Hampshire,New Hampshire,19,Nov 11 - Nov 23,24.2,19.8,29.0,19.8 - 29.0,21.6-26.2
+3,Symptoms of Depressive Disorder,By State,New Jersey,New Jersey,19,Nov 11 - Nov 23,26.2,22.7,29.9,22.7 - 29.9,21.6-26.2
+3,Symptoms of Depressive Disorder,By State,New Mexico,New Mexico,19,Nov 11 - Nov 23,32.6,27.8,37.6,27.8 - 37.6,30.2-35.5
+3,Symptoms of Depressive Disorder,By State,New York,New York,19,Nov 11 - Nov 23,25.1,21.7,28.7,21.7 - 28.7,21.6-26.2
+3,Symptoms of Depressive Disorder,By State,North Carolina,North Carolina,19,Nov 11 - Nov 23,26.9,22.4,31.7,22.4 - 31.7,26.3-27.5
+3,Symptoms of Depressive Disorder,By State,North Dakota,North Dakota,19,Nov 11 - Nov 23,26.1,20.6,32.3,20.6 - 32.3,21.6-26.2
+3,Symptoms of Depressive Disorder,By State,Ohio,Ohio,19,Nov 11 - Nov 23,28.7,23.8,34.0,23.8 - 34.0,27.6-30.1
+3,Symptoms of Depressive Disorder,By State,Oklahoma,Oklahoma,19,Nov 11 - Nov 23,31.6,26.8,36.7,26.8 - 36.7,30.2-35.5
+3,Symptoms of Depressive Disorder,By State,Oregon,Oregon,19,Nov 11 - Nov 23,28.7,25.1,32.4,25.1 - 32.4,27.6-30.1
+3,Symptoms of Depressive Disorder,By State,Pennsylvania,Pennsylvania,19,Nov 11 - Nov 23,27.9,23.9,32.3,23.9 - 32.3,27.6-30.1
+3,Symptoms of Depressive Disorder,By State,Rhode Island,Rhode Island,19,Nov 11 - Nov 23,29.9,25.1,35.0,25.1 - 35.0,27.6-30.1
+3,Symptoms of Depressive Disorder,By State,South Carolina,South Carolina,19,Nov 11 - Nov 23,32.6,27.8,37.7,27.8 - 37.7,30.2-35.5
+3,Symptoms of Depressive Disorder,By State,South Dakota,South Dakota,19,Nov 11 - Nov 23,27.4,21.4,34.0,21.4 - 34.0,26.3-27.5
+3,Symptoms of Depressive Disorder,By State,Tennessee,Tennessee,19,Nov 11 - Nov 23,29.4,25.1,34.0,25.1 - 34.0,27.6-30.1
+3,Symptoms of Depressive Disorder,By State,Texas,Texas,19,Nov 11 - Nov 23,31.4,28.2,34.7,28.2 - 34.7,30.2-35.5
+3,Symptoms of Depressive Disorder,By State,Utah,Utah,19,Nov 11 - Nov 23,28.7,26.0,31.6,26.0 - 31.6,27.6-30.1
+3,Symptoms of Depressive Disorder,By State,Vermont,Vermont,19,Nov 11 - Nov 23,21.6,17.4,26.3,17.4 - 26.3,21.6-26.2
+3,Symptoms of Depressive Disorder,By State,Virginia,Virginia,19,Nov 11 - Nov 23,23.3,19.5,27.5,19.5 - 27.5,21.6-26.2
+3,Symptoms of Depressive Disorder,By State,Washington,Washington,19,Nov 11 - Nov 23,27.7,24.4,31.2,24.4 - 31.2,27.6-30.1
+3,Symptoms of Depressive Disorder,By State,West Virginia,West Virginia,19,Nov 11 - Nov 23,29.6,24.0,35.7,24.0 - 35.7,27.6-30.1
+3,Symptoms of Depressive Disorder,By State,Wisconsin,Wisconsin,19,Nov 11 - Nov 23,26.5,22.3,31.1,22.3 - 31.1,26.3-27.5
+3,Symptoms of Depressive Disorder,By State,Wyoming,Wyoming,19,Nov 11 - Nov 23,26.8,22.1,32.0,22.1 - 32.0,26.3-27.5
+3,Symptoms of Anxiety Disorder,National Estimate,United States,United States,19,Nov 11 - Nov 23,37.2,36.3,38.2,36.3 - 38.2,
+3,Symptoms of Anxiety Disorder,By Age,United States,18 - 29 years,19,Nov 11 - Nov 23,48.7,46.0,51.4,46.0 - 51.4,
+3,Symptoms of Anxiety Disorder,By Age,United States,30 - 39 years,19,Nov 11 - Nov 23,43.3,41.1,45.5,41.1 - 45.5,
+3,Symptoms of Anxiety Disorder,By Age,United States,40 - 49 years,19,Nov 11 - Nov 23,41.0,39.3,42.8,39.3 - 42.8,
+3,Symptoms of Anxiety Disorder,By Age,United States,50 - 59 years,19,Nov 11 - Nov 23,35.3,33.9,36.8,33.9 - 36.8,
+3,Symptoms of Anxiety Disorder,By Age,United States,60 - 69 years,19,Nov 11 - Nov 23,30.2,28.5,32.0,28.5 - 32.0,
+3,Symptoms of Anxiety Disorder,By Age,United States,70 - 79 years,19,Nov 11 - Nov 23,24.2,21.9,26.5,21.9 - 26.5,
+3,Symptoms of Anxiety Disorder,By Age,United States,80 years and above,19,Nov 11 - Nov 23,17.9,13.7,22.8,13.7 - 22.8,
+3,Symptoms of Anxiety Disorder,By Gender,United States,Male,19,Nov 11 - Nov 23,31.1,29.8,32.4,29.8 - 32.4,
+3,Symptoms of Anxiety Disorder,By Gender,United States,Female,19,Nov 11 - Nov 23,42.9,41.9,43.9,41.9 - 43.9,
+3,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,Hispanic or Latino,19,Nov 11 - Nov 23,42.2,39.3,45.0,39.3 - 45.0,
+3,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic white, single race",19,Nov 11 - Nov 23,36.2,35.2,37.2,35.2 - 37.2,
+3,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic black, single race",19,Nov 11 - Nov 23,37.2,34.0,40.5,34.0 - 40.5,
+3,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic Asian, single race",19,Nov 11 - Nov 23,26.8,23.6,30.1,23.6 - 30.1,
+3,Symptoms of Anxiety Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic, other races and multiple races",19,Nov 11 - Nov 23,47.1,42.6,51.6,42.6 - 51.6,
+3,Symptoms of Anxiety Disorder,By Education,United States,Less than a high school diploma,19,Nov 11 - Nov 23,43.1,37.8,48.5,37.8 - 48.5,
+3,Symptoms of Anxiety Disorder,By Education,United States,High school diploma or GED,19,Nov 11 - Nov 23,36.7,34.4,39.0,34.4 - 39.0,
+3,Symptoms of Anxiety Disorder,By Education,United States,Some college/Associate's degree,19,Nov 11 - Nov 23,40.2,38.9,41.6,38.9 - 41.6,
+3,Symptoms of Anxiety Disorder,By Education,United States,Bachelor's degree or higher,19,Nov 11 - Nov 23,33.8,32.9,34.6,32.9 - 34.6,
+3,Symptoms of Anxiety Disorder,By State,Alabama,Alabama,19,Nov 11 - Nov 23,40.1,35.1,45.4,35.1 - 45.4,38.5-43.2
+3,Symptoms of Anxiety Disorder,By State,Alaska,Alaska,19,Nov 11 - Nov 23,40.3,36.3,44.4,36.3 - 44.4,38.5-43.2
+3,Symptoms of Anxiety Disorder,By State,Arizona,Arizona,19,Nov 11 - Nov 23,39.2,35.4,43.1,35.4 - 43.1,38.5-43.2
+3,Symptoms of Anxiety Disorder,By State,Arkansas,Arkansas,19,Nov 11 - Nov 23,39.0,34.6,43.6,34.6 - 43.6,38.5-43.2
+3,Symptoms of Anxiety Disorder,By State,California,California,19,Nov 11 - Nov 23,39.0,35.5,42.7,35.5 - 42.7,38.5-43.2
+3,Symptoms of Anxiety Disorder,By State,Colorado,Colorado,19,Nov 11 - Nov 23,42.2,37.8,46.6,37.8 - 46.6,38.5-43.2
+3,Symptoms of Anxiety Disorder,By State,Connecticut,Connecticut,19,Nov 11 - Nov 23,33.5,29.3,38.0,29.3 - 38.0,28.4-34.3
+3,Symptoms of Anxiety Disorder,By State,Delaware,Delaware,19,Nov 11 - Nov 23,31.9,27.5,36.5,27.5 - 36.5,28.4-34.3
+3,Symptoms of Anxiety Disorder,By State,District of Columbia,District of Columbia,19,Nov 11 - Nov 23,35.3,29.9,40.9,29.9 - 40.9,34.4-36.3
+3,Symptoms of Anxiety Disorder,By State,Florida,Florida,19,Nov 11 - Nov 23,33.9,29.7,38.3,29.7 - 38.3,28.4-34.3
+3,Symptoms of Anxiety Disorder,By State,Georgia,Georgia,19,Nov 11 - Nov 23,34.8,30.2,39.7,30.2 - 39.7,34.4-36.3
+3,Symptoms of Anxiety Disorder,By State,Hawaii,Hawaii,19,Nov 11 - Nov 23,28.4,23.8,33.3,23.8 - 33.3,28.4-34.3
+3,Symptoms of Anxiety Disorder,By State,Idaho,Idaho,19,Nov 11 - Nov 23,32.9,28.7,37.2,28.7 - 37.2,28.4-34.3
+3,Symptoms of Anxiety Disorder,By State,Illinois,Illinois,19,Nov 11 - Nov 23,37.4,34.2,40.6,34.2 - 40.6,36.4-38.4
+3,Symptoms of Anxiety Disorder,By State,Indiana,Indiana,19,Nov 11 - Nov 23,34.1,30.2,38.1,30.2 - 38.1,28.4-34.3
+3,Symptoms of Anxiety Disorder,By State,Iowa,Iowa,19,Nov 11 - Nov 23,32.9,29.8,36.1,29.8 - 36.1,28.4-34.3
+3,Symptoms of Anxiety Disorder,By State,Kansas,Kansas,19,Nov 11 - Nov 23,34.9,31.1,38.9,31.1 - 38.9,34.4-36.3
+3,Symptoms of Anxiety Disorder,By State,Kentucky,Kentucky,19,Nov 11 - Nov 23,32.4,27.6,37.4,27.6 - 37.4,28.4-34.3
+3,Symptoms of Anxiety Disorder,By State,Louisiana,Louisiana,19,Nov 11 - Nov 23,38.4,32.7,44.3,32.7 - 44.3,36.4-38.4
+3,Symptoms of Anxiety Disorder,By State,Maine,Maine,19,Nov 11 - Nov 23,35.0,29.3,41.2,29.3 - 41.2,34.4-36.3
+3,Symptoms of Anxiety Disorder,By State,Maryland,Maryland,19,Nov 11 - Nov 23,36.1,32.4,39.9,32.4 - 39.9,34.4-36.3
+3,Symptoms of Anxiety Disorder,By State,Massachusetts,Massachusetts,19,Nov 11 - Nov 23,37.5,34.4,40.6,34.4 - 40.6,36.4-38.4
+3,Symptoms of Anxiety Disorder,By State,Michigan,Michigan,19,Nov 11 - Nov 23,35.2,32.1,38.4,32.1 - 38.4,34.4-36.3
+3,Symptoms of Anxiety Disorder,By State,Minnesota,Minnesota,19,Nov 11 - Nov 23,37.5,34.1,41.0,34.1 - 41.0,36.4-38.4
+3,Symptoms of Anxiety Disorder,By State,Mississippi,Mississippi,19,Nov 11 - Nov 23,37.7,30.7,45.1,30.7 - 45.1,36.4-38.4
+3,Symptoms of Anxiety Disorder,By State,Missouri,Missouri,19,Nov 11 - Nov 23,33.3,27.8,39.3,27.8 - 39.3,28.4-34.3
+3,Symptoms of Anxiety Disorder,By State,Montana,Montana,19,Nov 11 - Nov 23,39.9,34.1,45.8,34.1 - 45.8,38.5-43.2
+3,Symptoms of Anxiety Disorder,By State,Nebraska,Nebraska,19,Nov 11 - Nov 23,34.9,30.6,39.4,30.6 - 39.4,34.4-36.3
+3,Symptoms of Anxiety Disorder,By State,Nevada,Nevada,19,Nov 11 - Nov 23,43.2,37.5,49.1,37.5 - 49.1,38.5-43.2
+3,Symptoms of Anxiety Disorder,By State,New Hampshire,New Hampshire,19,Nov 11 - Nov 23,33.8,29.3,38.4,29.3 - 38.4,28.4-34.3
+3,Symptoms of Anxiety Disorder,By State,New Jersey,New Jersey,19,Nov 11 - Nov 23,36.2,32.1,40.5,32.1 - 40.5,34.4-36.3
+3,Symptoms of Anxiety Disorder,By State,New Mexico,New Mexico,19,Nov 11 - Nov 23,42.6,37.6,47.7,37.6 - 47.7,38.5-43.2
+3,Symptoms of Anxiety Disorder,By State,New York,New York,19,Nov 11 - Nov 23,36.6,32.7,40.7,32.7 - 40.7,36.4-38.4
+3,Symptoms of Anxiety Disorder,By State,North Carolina,North Carolina,19,Nov 11 - Nov 23,38.3,33.1,43.7,33.1 - 43.7,36.4-38.4
+3,Symptoms of Anxiety Disorder,By State,North Dakota,North Dakota,19,Nov 11 - Nov 23,32.6,26.6,39.2,26.6 - 39.2,28.4-34.3
+3,Symptoms of Anxiety Disorder,By State,Ohio,Ohio,19,Nov 11 - Nov 23,38.1,33.1,43.2,33.1 - 43.2,36.4-38.4
+3,Symptoms of Anxiety Disorder,By State,Oklahoma,Oklahoma,19,Nov 11 - Nov 23,42.0,37.3,46.8,37.3 - 46.8,38.5-43.2
+3,Symptoms of Anxiety Disorder,By State,Oregon,Oregon,19,Nov 11 - Nov 23,40.8,37.2,44.4,37.2 - 44.4,38.5-43.2
+3,Symptoms of Anxiety Disorder,By State,Pennsylvania,Pennsylvania,19,Nov 11 - Nov 23,34.9,30.6,39.3,30.6 - 39.3,34.4-36.3
+3,Symptoms of Anxiety Disorder,By State,Rhode Island,Rhode Island,19,Nov 11 - Nov 23,37.8,32.5,43.2,32.5 - 43.2,36.4-38.4
+3,Symptoms of Anxiety Disorder,By State,South Carolina,South Carolina,19,Nov 11 - Nov 23,36.4,29.5,43.8,29.5 - 43.8,36.4-38.4
+3,Symptoms of Anxiety Disorder,By State,South Dakota,South Dakota,19,Nov 11 - Nov 23,34.7,29.7,39.8,29.7 - 39.8,34.4-36.3
+3,Symptoms of Anxiety Disorder,By State,Tennessee,Tennessee,19,Nov 11 - Nov 23,38.2,33.1,43.5,33.1 - 43.5,36.4-38.4
+3,Symptoms of Anxiety Disorder,By State,Texas,Texas,19,Nov 11 - Nov 23,42.3,38.7,45.9,38.7 - 45.9,38.5-43.2
+3,Symptoms of Anxiety Disorder,By State,Utah,Utah,19,Nov 11 - Nov 23,38.0,34.5,41.7,34.5 - 41.7,36.4-38.4
+3,Symptoms of Anxiety Disorder,By State,Vermont,Vermont,19,Nov 11 - Nov 23,36.2,31.5,41.1,31.5 - 41.1,34.4-36.3
+3,Symptoms of Anxiety Disorder,By State,Virginia,Virginia,19,Nov 11 - Nov 23,34.3,30.3,38.4,30.3 - 38.4,28.4-34.3
+3,Symptoms of Anxiety Disorder,By State,Washington,Washington,19,Nov 11 - Nov 23,36.3,33.4,39.3,33.4 - 39.3,34.4-36.3
+3,Symptoms of Anxiety Disorder,By State,West Virginia,West Virginia,19,Nov 11 - Nov 23,36.6,30.4,43.2,30.4 - 43.2,36.4-38.4
+3,Symptoms of Anxiety Disorder,By State,Wisconsin,Wisconsin,19,Nov 11 - Nov 23,31.4,27.2,35.9,27.2 - 35.9,28.4-34.3
+3,Symptoms of Anxiety Disorder,By State,Wyoming,Wyoming,19,Nov 11 - Nov 23,35.8,30.7,41.2,30.7 - 41.2,34.4-36.3
+3,Symptoms of Anxiety Disorder or Depressive Disorder,National Estimate,United States,United States,19,Nov 11 - Nov 23,42.6,41.8,43.4,41.8 - 43.4,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,18 - 29 years,19,Nov 11 - Nov 23,58.1,55.4,60.7,55.4 - 60.7,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,30 - 39 years,19,Nov 11 - Nov 23,48.4,46.4,50.5,46.4 - 50.5,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,40 - 49 years,19,Nov 11 - Nov 23,45.6,43.8,47.4,43.8 - 47.4,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,50 - 59 years,19,Nov 11 - Nov 23,40.2,38.7,41.7,38.7 - 41.7,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,60 - 69 years,19,Nov 11 - Nov 23,34.2,32.4,36.0,32.4 - 36.0,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,70 - 79 years,19,Nov 11 - Nov 23,28.6,26.3,31.0,26.3 - 31.0,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Age,United States,80 years and above,19,Nov 11 - Nov 23,24.1,19.4,29.3,19.4 - 29.3,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Gender,United States,Male,19,Nov 11 - Nov 23,37.2,36.0,38.5,36.0 - 38.5,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Gender,United States,Female,19,Nov 11 - Nov 23,47.6,46.5,48.6,46.5 - 48.6,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,Hispanic or Latino,19,Nov 11 - Nov 23,48.2,45.6,50.8,45.6 - 50.8,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic white, single race",19,Nov 11 - Nov 23,41.2,40.3,42.0,40.3 - 42.0,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic black, single race",19,Nov 11 - Nov 23,43.6,40.4,46.8,40.4 - 46.8,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic Asian, single race",19,Nov 11 - Nov 23,32.8,29.4,36.3,29.4 - 36.3,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Race/Hispanic ethnicity,United States,"Non-Hispanic, other races and multiple races",19,Nov 11 - Nov 23,52.6,48.4,56.8,48.4 - 56.8,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Education,United States,Less than a high school diploma,19,Nov 11 - Nov 23,51.0,45.3,56.7,45.3 - 56.7,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Education,United States,High school diploma or GED,19,Nov 11 - Nov 23,43.0,41.0,45.0,41.0 - 45.0,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Education,United States,Some college/Associate's degree,19,Nov 11 - Nov 23,45.9,44.7,47.2,44.7 - 47.2,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By Education,United States,Bachelor's degree or higher,19,Nov 11 - Nov 23,37.5,36.7,38.3,36.7 - 38.3,
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Alabama,Alabama,19,Nov 11 - Nov 23,43.8,38.6,49.0,38.6 - 49.0,41.6-44.3
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Alaska,Alaska,19,Nov 11 - Nov 23,44.6,40.6,48.6,40.6 - 48.6,44.4-49.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Arizona,Arizona,19,Nov 11 - Nov 23,43.8,39.8,47.8,39.8 - 47.8,41.6-44.3
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Arkansas,Arkansas,19,Nov 11 - Nov 23,44.2,38.8,49.7,38.8 - 49.7,41.6-44.3
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,California,California,19,Nov 11 - Nov 23,45.1,41.3,49.0,41.3 - 49.0,44.4-49.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Colorado,Colorado,19,Nov 11 - Nov 23,45.8,41.9,49.7,41.9 - 49.7,44.4-49.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Connecticut,Connecticut,19,Nov 11 - Nov 23,37.5,33.2,41.9,33.2 - 41.9,32.1-39.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Delaware,Delaware,19,Nov 11 - Nov 23,35.9,30.8,41.2,30.8 - 41.2,32.1-39.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,District of Columbia,District of Columbia,19,Nov 11 - Nov 23,40.3,33.4,47.5,33.4 - 47.5,39.8-41.5
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Florida,Florida,19,Nov 11 - Nov 23,41.3,36.8,46.0,36.8 - 46.0,39.8-41.5
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Georgia,Georgia,19,Nov 11 - Nov 23,39.6,35.2,44.1,35.2 - 44.1,32.1-39.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Hawaii,Hawaii,19,Nov 11 - Nov 23,32.1,27.4,36.9,27.4 - 36.9,32.1-39.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Idaho,Idaho,19,Nov 11 - Nov 23,40.5,35.9,45.3,35.9 - 45.3,39.8-41.5
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Illinois,Illinois,19,Nov 11 - Nov 23,42.6,39.0,46.3,39.0 - 46.3,41.6-44.3
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Indiana,Indiana,19,Nov 11 - Nov 23,39.5,35.6,43.4,35.6 - 43.4,32.1-39.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Iowa,Iowa,19,Nov 11 - Nov 23,39.7,36.1,43.4,36.1 - 43.4,32.1-39.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Kansas,Kansas,19,Nov 11 - Nov 23,40.0,36.0,44.2,36.0 - 44.2,39.8-41.5
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Kentucky,Kentucky,19,Nov 11 - Nov 23,38.9,34.7,43.3,34.7 - 43.3,32.1-39.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Louisiana,Louisiana,19,Nov 11 - Nov 23,46.8,40.7,52.9,40.7 - 52.9,44.4-49.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Maine,Maine,19,Nov 11 - Nov 23,40.9,35.0,47.0,35.0 - 47.0,39.8-41.5
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Maryland,Maryland,19,Nov 11 - Nov 23,40.3,36.7,43.9,36.7 - 43.9,39.8-41.5
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Massachusetts,Massachusetts,19,Nov 11 - Nov 23,42.1,38.8,45.5,38.8 - 45.5,41.6-44.3
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Michigan,Michigan,19,Nov 11 - Nov 23,40.7,37.5,44.1,37.5 - 44.1,39.8-41.5
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Minnesota,Minnesota,19,Nov 11 - Nov 23,41.4,37.9,45.0,37.9 - 45.0,39.8-41.5
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Mississippi,Mississippi,19,Nov 11 - Nov 23,44.3,37.0,51.8,37.0 - 51.8,41.6-44.3
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Missouri,Missouri,19,Nov 11 - Nov 23,39.7,34.1,45.4,34.1 - 45.4,32.1-39.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Montana,Montana,19,Nov 11 - Nov 23,45.3,39.3,51.4,39.3 - 51.4,44.4-49.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Nebraska,Nebraska,19,Nov 11 - Nov 23,39.6,35.3,44.0,35.3 - 44.0,32.1-39.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Nevada,Nevada,19,Nov 11 - Nov 23,47.6,42.4,52.9,42.4 - 52.9,44.4-49.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,New Hampshire,New Hampshire,19,Nov 11 - Nov 23,40.1,35.8,44.5,35.8 - 44.5,39.8-41.5
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,New Jersey,New Jersey,19,Nov 11 - Nov 23,40.9,36.8,45.1,36.8 - 45.1,39.8-41.5
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,New Mexico,New Mexico,19,Nov 11 - Nov 23,49.7,44.5,54.9,44.5 - 54.9,44.4-49.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,New York,New York,19,Nov 11 - Nov 23,41.7,38.0,45.5,38.0 - 45.5,41.6-44.3
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,North Carolina,North Carolina,19,Nov 11 - Nov 23,41.5,36.2,46.9,36.2 - 46.9,39.8-41.5
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,North Dakota,North Dakota,19,Nov 11 - Nov 23,39.0,32.7,45.6,32.7 - 45.6,32.1-39.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Ohio,Ohio,19,Nov 11 - Nov 23,41.7,36.8,46.8,36.8 - 46.8,41.6-44.3
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Oklahoma,Oklahoma,19,Nov 11 - Nov 23,46.5,41.5,51.6,41.5 - 51.6,44.4-49.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Oregon,Oregon,19,Nov 11 - Nov 23,45.2,41.4,49.1,41.4 - 49.1,44.4-49.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Pennsylvania,Pennsylvania,19,Nov 11 - Nov 23,39.9,35.3,44.7,35.3 - 44.7,39.8-41.5
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Rhode Island,Rhode Island,19,Nov 11 - Nov 23,44.5,39.3,49.8,39.3 - 49.8,44.4-49.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,South Carolina,South Carolina,19,Nov 11 - Nov 23,44.9,38.5,51.4,38.5 - 51.4,44.4-49.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,South Dakota,South Dakota,19,Nov 11 - Nov 23,42.3,36.0,48.8,36.0 - 48.8,41.6-44.3
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Tennessee,Tennessee,19,Nov 11 - Nov 23,42.7,37.8,47.7,37.8 - 47.7,41.6-44.3
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Texas,Texas,19,Nov 11 - Nov 23,47.3,43.9,50.7,43.9 - 50.7,44.4-49.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Utah,Utah,19,Nov 11 - Nov 23,44.3,40.9,47.6,40.9 - 47.6,41.6-44.3
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Vermont,Vermont,19,Nov 11 - Nov 23,39.8,35.5,44.1,35.5 - 44.1,39.8-41.5
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Virginia,Virginia,19,Nov 11 - Nov 23,38.2,34.0,42.5,34.0 - 42.5,32.1-39.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Washington,Washington,19,Nov 11 - Nov 23,43.4,40.0,46.7,40.0 - 46.7,41.6-44.3
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,West Virginia,West Virginia,19,Nov 11 - Nov 23,42.6,35.9,49.7,35.9 - 49.7,41.6-44.3
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Wisconsin,Wisconsin,19,Nov 11 - Nov 23,38.7,33.8,43.8,33.8 - 43.8,32.1-39.7
+3,Symptoms of Anxiety Disorder or Depressive Disorder,By State,Wyoming,Wyoming,19,Nov 11 - Nov 23,39.5,33.6,45.6,33.6 - 45.6,32.1-39.7

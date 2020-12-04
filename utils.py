@@ -14,7 +14,7 @@ atributo_ansiedade = 'Symptoms of Anxiety Disorder'
 atributo_ambos = 'Symptoms of Anxiety Disorder or Depressive Disorder'
 
 csv_covid = 'rows.csv accessType=DOWNLOAD.csv'
-csv_covid_EUA = 'Dataset-OWID-covid.csv'
+csv_covid_EUA = 'owid-covid-data (1).csv'
 csv_mental = 'Indicators_of_Anxiety_or_Depression_Based_on_Reported_Frequency_of_Symptoms_During_Last_7_Days.csv'
 csv_google_trends = 'google-data.csv'
 
@@ -67,7 +67,7 @@ def le_curva_covid(sigla):
     return df_covid
 
 # carrega o dataset de covid do país inteiro (EUA)
-def le_curva_covid_EUA():
+def le_curva_covid_EUA(normaliza=True):
     curva_covid = read_csv(csv_covid_EUA)
 
     curva_covid_eua = curva_covid[curva_covid['location'] == 'United States']
@@ -79,7 +79,8 @@ def le_curva_covid_EUA():
 
     df_covid = df_covid.set_index('date')
 
-    df_covid = normaliza_dataframe(df_covid)
+    if normaliza:
+        df_covid = normaliza_dataframe(df_covid)
 
     return df_covid
 
@@ -98,11 +99,40 @@ def le_curva_mental(estado, doenca):
     for index, data in enumerate(df_mental['Time Period Label']):
         df_mental['Time Period Label'].iloc[index] = get_data(data)
 
+    periodos = df_mental['Time Period Label'].values
+
+    df_mental['Time Period Label'] = [calcula_media_periodo(inicio, fim) for inicio, fim in periodos]
+
     df_mental = df_mental.set_index('Time Period Label')
 
     df_mental = normaliza_dataframe(df_mental)
 
-    return df_mental
+    return df_mental, periodos
+
+def le_curva_mental_EUA(doenca):
+    curva_mental = read_csv(csv_mental)
+    curva_mental_filtered = curva_mental[curva_mental['Group'] == 'National Estimate']
+
+    atributo = eval('atributo_' + doenca)
+
+    curva_mental_doenca = curva_mental_filtered[curva_mental_filtered['Indicator'] == atributo]
+
+    curva_mental_valid = curva_mental_doenca[curva_mental_doenca['Phase'] != -1]
+
+    df_mental = curva_mental_valid[['Time Period Label', 'Value']]
+
+    for index, data in enumerate(df_mental['Time Period Label']):
+        df_mental['Time Period Label'].iloc[index] = get_data(data)
+
+    periodos = df_mental['Time Period Label'].values
+
+    df_mental['Time Period Label'] = [calcula_media_periodo(inicio, fim) for inicio, fim in periodos]
+
+    df_mental = df_mental.set_index('Time Period Label')
+
+    df_mental = normaliza_dataframe(df_mental)
+
+    return df_mental, periodos
 
 def le_curva_mental_trends(termo_pesquisa: str):
     curva_mental = read_csv(csv_google_trends)
@@ -125,18 +155,13 @@ def centraliza_curva_covid(df_covid, inicio, fim):
 
 # reduzindo a quantidade de ocorrências de covid
 # calcula a média de cada período do dataset de saúde mental e substitui por esse valor
-def substitui_media_periodo(curva_covid, datas_covid, datas_mental):
-    lista_covid_final = []
-    lista_datas_covid_final = []
-    for periodo in datas_mental:
+def substitui_media_periodo(df_covid, periodos_mental):
+    df_covid_final = DataFrame(columns=df_covid.columns)
+    for periodo in periodos_mental:
         inicio, fim = periodo[0], periodo[1]
         media = calcula_media_periodo(inicio, fim)
-        index_inicial = datas_covid.index(inicio)
-        index_final = datas_covid.index(fim)
-        valor_medio = np.mean(curva_covid[index_inicial:index_final+1])
-        lista_covid_final.append(valor_medio)
-        lista_datas_covid_final.append(media)
-    return lista_covid_final, lista_datas_covid_final
+        df_covid_final.loc[media] = df_covid.loc[inicio:fim].mean()[0]
+    return df_covid_final
 
 def calcula_spline(curva_covid, datas_covid, curva_mental, datas_mental, n_samples):
     datas_covid, curva_covid = spline(datas_covid, curva_covid, n_samples)

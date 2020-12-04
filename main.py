@@ -62,19 +62,17 @@ estados = [
     ('WY', 'Wyoming')
 ]
 
-#def computa_curvas(sigla: str, estado: str, doenca: str, estadual: bool):
-#    curva_covid, datas_covid = le_curva_covid(sigla) if estadual else le_curva_covid_EUA()
-#    curva_mental, datas_mental = le_curva_mental(estado, doenca)
-#
-#    curva_covid, datas_covid = centraliza_curva_covid(datas_covid, curva_covid, inicio=datas_mental[0][0], fim=datas_mental[-1][1])
-#
-#    curva_covid, datas_covid = substitui_media_periodo(curva_covid, datas_covid, datas_mental)
-#
-#    datas_mental = [calcula_media_periodo(inicio, fim) for inicio, fim in datas_mental]
-#
-#    curva_covid = normaliza_dataframe(curva_covid)
-#
-#    return curva_covid, datas_covid, curva_mental, datas_mental
+def computa_curvas(sigla: str, estado: str, doenca: str, estadual: bool):
+    df_covid = le_curva_covid(sigla) if estadual else le_curva_covid_EUA(normaliza=False)
+    df_mental, periodos_mental = le_curva_mental(estado, doenca) if estadual else le_curva_mental_EUA(doenca)
+
+    df_covid = centraliza_curva_covid(df_covid, inicio=df_mental.index[0], fim=df_mental.index[-1])
+
+    df_covid = substitui_media_periodo(df_covid, periodos_mental)
+
+    df_covid = normaliza_dataframe(df_covid)
+
+    return df_covid, df_mental
 
 def google_trends(termo_pesquisa: str):
     df_mental = le_curva_mental_trends(termo_pesquisa)
@@ -87,33 +85,71 @@ def google_trends(termo_pesquisa: str):
 def testes_google_trends():
     df_covid, df_mental = google_trends(argv[1])
     #print(granger_causuality(df_covid, df_mental), end="\n\n")
-    #plot(df_covid, df_mental, label_mental=('Pesquisas de ' + argv[1]))
+    plot(df_covid, df_mental, label_mental=('Pesquisas de ' + argv[1]))
     df_covid = diff_primeira_ordem(df_covid)[1:]
     df_mental = diff_primeira_ordem(df_mental)[1:]
     #print(granger_causuality(df_covid, df_mental), end="\n\n")
-    #plot(df_covid, df_mental, label_mental=('Pesquisas de ' + argv[1]))
+    plot(df_covid, df_mental, label_mental=('Pesquisas de ' + argv[1]))
     #plot_pacf(df_mental)
     #plt.show()
-    for lag in range(1, 30):
-        mental_series = df_mental[argv[1]].iloc[lag:]
-        covid_series = df_covid['new_cases'].iloc[:-lag]
-        print('Lag:', lag)
-        print(pearsonr(mental_series, covid_series))
-        print('------')
+    #for lag in range(1, 30):
+    #    mental_series = df_mental[argv[1]].iloc[lag:]
+    #    covid_series = df_covid['new_cases'].iloc[:-lag]
+    #    print('Lag:', lag)
+    #    print(pearsonr(mental_series, covid_series))
+    #    print('------')
     df = concat([df_mental, df_covid], axis=1)
     model = VAR(df)
     model_fit = model.fit(maxlags=30)
     print(model_fit.summary())
+    return df_covid, df_mental
 
-#def testes_cdc():
-#    curva_covid, datas_covid, curva_mental, datas_mental = computa_curvas(argv[2], argv[1], argv[3], estadual=True)
-#    print(granger_causuality(curva_covid, curva_mental), end="\n\n")
-#    plot(curva_covid, datas_covid, curva_mental, datas_mental, label_mental=('Casos de ' + argv[3]))
-#    curva_covid, curva_mental = diff_primeira_ordem(curva_covid, curva_mental)
-#    print(granger_causuality(curva_covid, curva_mental), end="\n\n")
-#    plot(curva_covid, None, curva_mental, None, label_mental=('Casos de ' + argv[3]))
+def previsao_ansiedade(df_covid, df_mental, inicio):
+    coefs = [-0.547341, -0.580165, -0.438828, -0.453479, -0.335704, -0.340717, -0.240634, -0.255337, 0.848681, -0.292593, 0.834970, -0.251307, -0.264414, -0.310971, -0.233544, -0.276718, -0.837788, -0.269932, -0.845041, -0.929429, -1.030544]
+    lags = [1, 2, 3, 4, 5, 6, 10, 12, 12, 13, 13, 14, 15, 16, 17, 18, 18, 19, 19, 20, 21]
+    curvas = ['mental', 'mental', 'mental', 'mental', 'mental', 'mental', 'mental', 'mental', 'covid', 'mental', 'covid', 'mental', 'mental', 'mental', 'mental', 'mental', 'covid', 'mental', 'covid', 'covid', 'covid']
+    df_ansiedade = df_mental.iloc[:inicio-1]
+    for i, data in enumerate(df_mental.index[inicio:]):
+        parcial_sum = 0
+        for coef, lag, curva in zip(coefs, lags, curvas):
+            parcial_sum += coef * eval('df_'+curva).iloc[i-lag][0]
+        df_ansiedade.loc[data] = parcial_sum
+    plt.plot(df_mental)
+    plt.plot(df_ansiedade)
+    plt.show()
 
-testes_google_trends()
+def testes_cdc():
+    df_covid, df_mental = computa_curvas(argv[2], argv[1], argv[3], estadual=False)
+
+    print(granger_causuality(df_covid, df_mental), end="\n\n")
+    #plot(df_covid, df_mental, label_mental=('Casos de ' + argv[3]))
+    df = concat([df_mental, df_covid], axis=1)
+    model = VAR(df)
+    model_fit = model.fit(maxlags=10)
+    print(model_fit.summary())
+
+    df_covid = diff_primeira_ordem(df_covid)[1:]
+    df_mental = diff_primeira_ordem(df_mental)[1:]
+    print(granger_causuality(df_covid, df_mental), end="\n\n")
+    #plot(df_covid, df_mental, label_mental=('Casos de ' + argv[3]))
+    df = concat([df_mental, df_covid], axis=1)
+    model = VAR(df)
+    model_fit = model.fit(maxlags=10)
+    print(model_fit.summary())
+
+    df_covid = diff_primeira_ordem(df_covid)[1:]
+    df_mental = diff_primeira_ordem(df_mental)[1:]
+    print(granger_causuality(df_covid, df_mental), end="\n\n")
+    #plot(df_covid, df_mental, label_mental=('Casos de ' + argv[3]))
+    df = concat([df_mental, df_covid], axis=1)
+    model = VAR(df)
+    model_fit = model.fit(maxlags=15)
+    print(model_fit.summary())
+
+    return df_covid, df_mental
+
+df_covid, df_mental = testes_cdc()
+#previsao_ansiedade(df_covid, df_mental, 22)
 
 #correlacoes = []
 #for doenca in ['ansiedade', 'depressao', 'ambos']:

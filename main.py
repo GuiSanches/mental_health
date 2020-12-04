@@ -90,17 +90,17 @@ def testes_google_trends():
     df_mental = diff_primeira_ordem(df_mental)[1:]
     #print(granger_causuality(df_covid, df_mental), end="\n\n")
     plot(df_covid, df_mental, label_mental=('Pesquisas de ' + argv[1]))
-    #plot_pacf(df_mental)
-    #plt.show()
-    #for lag in range(1, 30):
-    #    mental_series = df_mental[argv[1]].iloc[lag:]
-    #    covid_series = df_covid['new_cases'].iloc[:-lag]
-    #    print('Lag:', lag)
-    #    print(pearsonr(mental_series, covid_series))
-    #    print('------')
+    plot_pacf(df_mental)
+    plt.show()
+    for lag in range(1, 40):
+        mental_series = df_mental[argv[1]].iloc[lag:]
+        covid_series = df_covid['new_cases'].iloc[:-lag]
+        print('Lag:', lag)
+        print(pearsonr(mental_series, covid_series))
+        print('------')
     df = concat([df_mental, df_covid], axis=1)
     model = VAR(df)
-    model_fit = model.fit(maxlags=30)
+    model_fit = model.fit(maxlags=35)
     print(model_fit.summary())
     return df_covid, df_mental
 
@@ -108,14 +108,15 @@ def previsao_ansiedade(df_covid, df_mental, inicio):
     coefs = [-0.547341, -0.580165, -0.438828, -0.453479, -0.335704, -0.340717, -0.240634, -0.255337, 0.848681, -0.292593, 0.834970, -0.251307, -0.264414, -0.310971, -0.233544, -0.276718, -0.837788, -0.269932, -0.845041, -0.929429, -1.030544]
     lags = [1, 2, 3, 4, 5, 6, 10, 12, 12, 13, 13, 14, 15, 16, 17, 18, 18, 19, 19, 20, 21]
     curvas = ['mental', 'mental', 'mental', 'mental', 'mental', 'mental', 'mental', 'mental', 'covid', 'mental', 'covid', 'mental', 'mental', 'mental', 'mental', 'mental', 'covid', 'mental', 'covid', 'covid', 'covid']
-    df_ansiedade = df_mental.iloc[:inicio-1]
+    df_ansiedade = DataFrame(columns=df_mental.columns)
     for i, data in enumerate(df_mental.index[inicio:]):
         parcial_sum = 0
         for coef, lag, curva in zip(coefs, lags, curvas):
             parcial_sum += coef * eval('df_'+curva).iloc[i-lag][0]
         df_ansiedade.loc[data] = parcial_sum
-    plt.plot(df_mental)
-    plt.plot(df_ansiedade)
+    plt.plot(df_mental, label="original")
+    plt.plot(df_ansiedade, label="previsão")
+    plt.legend(loc='upper left')
     plt.show()
 
 def testes_cdc():
@@ -148,8 +149,8 @@ def testes_cdc():
 
     return df_covid, df_mental
 
-df_covid, df_mental = testes_cdc()
-#previsao_ansiedade(df_covid, df_mental, 22)
+df_covid, df_mental = testes_google_trends()
+previsao_ansiedade(df_covid, df_mental, 22)
 
 #correlacoes = []
 #for doenca in ['ansiedade', 'depressao', 'ambos']:

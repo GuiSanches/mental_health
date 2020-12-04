@@ -100,10 +100,10 @@ def testes_google_trends():
     #    print('Lag:', lag)
     #    print(pearsonr(mental_series, covid_series))
     #    print('------')
-    #df = concat([df_mental, df_covid], axis=1)
-    #model = VAR(df)
-    #model_fit = model.fit(maxlags=8)
-    #print(model_fit.summary())
+    df = concat([df_mental, df_covid], axis=1)
+    model = VAR(df)
+    model_fit = model.fit(maxlags=8)
+    print(model_fit.summary())
     plot(df_covid, df_mental, label_mental=('Pesquisas de ' + argv[1]))
 
     return df_covid, df_mental
